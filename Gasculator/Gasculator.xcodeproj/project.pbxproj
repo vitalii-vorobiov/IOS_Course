@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28482109233525F900970506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28482108233525F900970506 /* AppDelegate.swift */; };
+		2848210B233525F900970506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848210A233525F900970506 /* ViewController.swift */; };
+		2848210E233525F900970506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2848210C233525F900970506 /* Main.storyboard */; };
+		28482110233525FE00970506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2848210F233525FE00970506 /* Assets.xcassets */; };
+		28482113233525FE00970506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28482111233525FE00970506 /* LaunchScreen.storyboard */; };
+		2848211E233525FE00970506 /* GasculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848211D233525FE00970506 /* GasculatorTests.swift */; };
+		28482129233525FE00970506 /* GasculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28482128233525FE00970506 /* GasculatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2848211A233525FE00970506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 284820FD233525F900970506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28482104233525F900970506;
+			remoteInfo = Gasculator;
+		};
+		28482125233525FE00970506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 284820FD233525F900970506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28482104233525F900970506;
+			remoteInfo = Gasculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28482105233525F900970506 /* Gasculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gasculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28482108233525F900970506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2848210A233525F900970506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2848210D233525F900970506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2848210F233525FE00970506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28482112233525FE00970506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28482114233525FE00970506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28482119233525FE00970506 /* GasculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GasculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2848211D233525FE00970506 /* GasculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasculatorTests.swift; sourceTree = "<group>"; };
+		2848211F233525FE00970506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28482124233525FE00970506 /* GasculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GasculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28482128233525FE00970506 /* GasculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasculatorUITests.swift; sourceTree = "<group>"; };
+		2848212A233525FE00970506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28482102233525F900970506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28482116233525FE00970506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28482121233525FE00970506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		284820FC233525F900970506 = {
+			isa = PBXGroup;
+			children = (
+				28482107233525F900970506 /* Gasculator */,
+				2848211C233525FE00970506 /* GasculatorTests */,
+				28482127233525FE00970506 /* GasculatorUITests */,
+				28482106233525F900970506 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28482106233525F900970506 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28482105233525F900970506 /* Gasculator.app */,
+				28482119233525FE00970506 /* GasculatorTests.xctest */,
+				28482124233525FE00970506 /* GasculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28482107233525F900970506 /* Gasculator */ = {
+			isa = PBXGroup;
+			children = (
+				28482108233525F900970506 /* AppDelegate.swift */,
+				2848210A233525F900970506 /* ViewController.swift */,
+				2848210C233525F900970506 /* Main.storyboard */,
+				2848210F233525FE00970506 /* Assets.xcassets */,
+				28482111233525FE00970506 /* LaunchScreen.storyboard */,
+				28482114233525FE00970506 /* Info.plist */,
+			);
+			path = Gasculator;
+			sourceTree = "<group>";
+		};
+		2848211C233525FE00970506 /* GasculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2848211D233525FE00970506 /* GasculatorTests.swift */,
+				2848211F233525FE00970506 /* Info.plist */,
+			);
+			path = GasculatorTests;
+			sourceTree = "<group>";
+		};
+		28482127233525FE00970506 /* GasculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28482128233525FE00970506 /* GasculatorUITests.swift */,
+				2848212A233525FE00970506 /* Info.plist */,
+			);
+			path = GasculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28482104233525F900970506 /* Gasculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2848212D233525FE00970506 /* Build configuration list for PBXNativeTarget "Gasculator" */;
+			buildPhases = (
+				28482101233525F900970506 /* Sources */,
+				28482102233525F900970506 /* Frameworks */,
+				28482103233525F900970506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gasculator;
+			productName = Gasculator;
+			productReference = 28482105233525F900970506 /* Gasculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28482118233525FE00970506 /* GasculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28482130233525FE00970506 /* Build configuration list for PBXNativeTarget "GasculatorTests" */;
+			buildPhases = (
+				28482115233525FE00970506 /* Sources */,
+				28482116233525FE00970506 /* Frameworks */,
+				28482117233525FE00970506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2848211B233525FE00970506 /* PBXTargetDependency */,
+			);
+			name = GasculatorTests;
+			productName = GasculatorTests;
+			productReference = 28482119233525FE00970506 /* GasculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28482123233525FE00970506 /* GasculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28482133233525FE00970506 /* Build configuration list for PBXNativeTarget "GasculatorUITests" */;
+			buildPhases = (
+				28482120233525FE00970506 /* Sources */,
+				28482121233525FE00970506 /* Frameworks */,
+				28482122233525FE00970506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28482126233525FE00970506 /* PBXTargetDependency */,
+			);
+			name = GasculatorUITests;
+			productName = GasculatorUITests;
+			productReference = 28482124233525FE00970506 /* GasculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		284820FD233525F900970506 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "UCU iOS";
+				TargetAttributes = {
+					28482104233525F900970506 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					28482118233525FE00970506 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 28482104233525F900970506;
+					};
+					28482123233525FE00970506 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 28482104233525F900970506;
+					};
+				};
+			};
+			buildConfigurationList = 28482100233525F900970506 /* Build configuration list for PBXProject "Gasculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 284820FC233525F900970506;
+			productRefGroup = 28482106233525F900970506 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28482104233525F900970506 /* Gasculator */,
+				28482118233525FE00970506 /* GasculatorTests */,
+				28482123233525FE00970506 /* GasculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28482103233525F900970506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28482113233525FE00970506 /* LaunchScreen.storyboard in Resources */,
+				28482110233525FE00970506 /* Assets.xcassets in Resources */,
+				2848210E233525F900970506 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28482117233525FE00970506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28482122233525FE00970506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28482101233525F900970506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2848210B233525F900970506 /* ViewController.swift in Sources */,
+				28482109233525F900970506 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28482115233525FE00970506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2848211E233525FE00970506 /* GasculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28482120233525FE00970506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28482129233525FE00970506 /* GasculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2848211B233525FE00970506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28482104233525F900970506 /* Gasculator */;
+			targetProxy = 2848211A233525FE00970506 /* PBXContainerItemProxy */;
+		};
+		28482126233525FE00970506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28482104233525F900970506 /* Gasculator */;
+			targetProxy = 28482125233525FE00970506 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2848210C233525F900970506 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2848210D233525F900970506 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28482111233525FE00970506 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28482112233525FE00970506 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2848212B233525FE00970506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2848212C233525FE00970506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2848212E233525FE00970506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4DA3GZF4H;
+				INFOPLIST_FILE = Gasculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.4.5.Gasculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2848212F233525FE00970506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4DA3GZF4H;
+				INFOPLIST_FILE = Gasculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.4.5.Gasculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28482131233525FE00970506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4DA3GZF4H;
+				INFOPLIST_FILE = GasculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.4.5.GasculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gasculator.app/Gasculator";
+			};
+			name = Debug;
+		};
+		28482132233525FE00970506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4DA3GZF4H;
+				INFOPLIST_FILE = GasculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.4.5.GasculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gasculator.app/Gasculator";
+			};
+			name = Release;
+		};
+		28482134233525FE00970506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4DA3GZF4H;
+				INFOPLIST_FILE = GasculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.4.5.GasculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gasculator;
+			};
+			name = Debug;
+		};
+		28482135233525FE00970506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4DA3GZF4H;
+				INFOPLIST_FILE = GasculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.4.5.GasculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gasculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28482100233525F900970506 /* Build configuration list for PBXProject "Gasculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2848212B233525FE00970506 /* Debug */,
+				2848212C233525FE00970506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2848212D233525FE00970506 /* Build configuration list for PBXNativeTarget "Gasculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2848212E233525FE00970506 /* Debug */,
+				2848212F233525FE00970506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28482130233525FE00970506 /* Build configuration list for PBXNativeTarget "GasculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28482131233525FE00970506 /* Debug */,
+				28482132233525FE00970506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28482133233525FE00970506 /* Build configuration list for PBXNativeTarget "GasculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28482134233525FE00970506 /* Debug */,
+				28482135233525FE00970506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 284820FD233525F900970506 /* Project object */;
+}
