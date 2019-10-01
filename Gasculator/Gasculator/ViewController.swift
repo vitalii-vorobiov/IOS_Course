@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Gasculator
 //
-//  Created by Adriyan Bevz on 9/20/19.
+//  Created by Adriyan Bevz on 10/1/19.
 //  Copyright © 2019 UCU iOS. All rights reserved.
 //
 

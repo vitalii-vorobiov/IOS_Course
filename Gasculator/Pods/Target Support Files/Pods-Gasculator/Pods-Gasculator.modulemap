@@ -1,0 +1,6 @@
+framework module Pods_Gasculator {
+  umbrella header "Pods-Gasculator-umbrella.h"
+
+  export *
+  module * { export * }
+}
