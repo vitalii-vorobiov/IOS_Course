@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  Gasculator
 //
-//  Created by Adriyan Bevz on 10/1/19.
-//  Copyright © 2019 UCU iOS. All rights reserved.
+//  Created by Vitaliy Vorobyov on 10/2/19.
+//  Copyright © 2019 4andahalf. All rights reserved.
 //
 
 import UIKit

@@ -2,20 +2,22 @@
 //  AppDelegate.swift
 //  Gasculator
 //
-//  Created by Adriyan Bevz on 10/1/19.
-//  Copyright © 2019 UCU iOS. All rights reserved.
+//  Created by Vitaliy Vorobyov on 10/2/19.
+//  Copyright © 2019 4andahalf. All rights reserved.
 //
 
 import UIKit
 import CoreData
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyD369yTM5jm7xUhI1jJJ3WOpbHyTZ9QBng")
+        GMSPlacesClient.provideAPIKey("AIzaSyD369yTM5jm7xUhI1jJJ3WOpbHyTZ9QBng")
         return true
     }
 

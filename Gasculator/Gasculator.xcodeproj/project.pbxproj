@@ -3,109 +3,109 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28CDA1AB2343C53300EA3685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA1AA2343C53300EA3685 /* AppDelegate.swift */; };
-		28CDA1AD2343C53300EA3685 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA1AC2343C53300EA3685 /* SceneDelegate.swift */; };
-		28CDA1AF2343C53300EA3685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA1AE2343C53300EA3685 /* ViewController.swift */; };
-		28CDA1B22343C53300EA3685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CDA1B02343C53300EA3685 /* Main.storyboard */; };
-		28CDA1B52343C53300EA3685 /* Gasculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA1B32343C53300EA3685 /* Gasculator.xcdatamodeld */; };
-		28CDA1B72343C53400EA3685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CDA1B62343C53400EA3685 /* Assets.xcassets */; };
-		28CDA1BA2343C53400EA3685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CDA1B82343C53400EA3685 /* LaunchScreen.storyboard */; };
-		B6C82FB1B8AF77EFDDD6137E /* Pods_Gasculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF07D531631DC606BA6EEC9 /* Pods_Gasculator.framework */; };
+		1AC78AF02344B0B700B9E138 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */; };
+		1AC78AF22344B0B700B9E138 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF12344B0B700B9E138 /* SceneDelegate.swift */; };
+		1AC78AF42344B0B800B9E138 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF32344B0B700B9E138 /* ViewController.swift */; };
+		1AC78AF72344B0B800B9E138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AF52344B0B800B9E138 /* Main.storyboard */; };
+		1AC78AFA2344B0B800B9E138 /* Gasculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF82344B0B800B9E138 /* Gasculator.xcdatamodeld */; };
+		1AC78AFC2344B0B900B9E138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AFB2344B0B900B9E138 /* Assets.xcassets */; };
+		1AC78AFF2344B0B900B9E138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AFD2344B0B900B9E138 /* LaunchScreen.storyboard */; };
+		E5BA26237FE9E481C8223ED0 /* Pods_Gasculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28CDA1A72343C53300EA3685 /* Gasculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gasculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		28CDA1AA2343C53300EA3685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28CDA1AC2343C53300EA3685 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28CDA1AE2343C53300EA3685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28CDA1B12343C53300EA3685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		28CDA1B42343C53300EA3685 /* Gasculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gasculator.xcdatamodel; sourceTree = "<group>"; };
-		28CDA1B62343C53400EA3685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		28CDA1B92343C53400EA3685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		28CDA1BB2343C53400EA3685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FF07D531631DC606BA6EEC9 /* Pods_Gasculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gasculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		878F7DF0B3C99C78DD4A5A27 /* Pods-Gasculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.debug.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.debug.xcconfig"; sourceTree = "<group>"; };
-		9A18EF61BC30F5953CE69407 /* Pods-Gasculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.release.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.release.xcconfig"; sourceTree = "<group>"; };
+		1AC78AEC2344B0B700B9E138 /* Gasculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gasculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AC78AF12344B0B700B9E138 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1AC78AF32344B0B700B9E138 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AC78AF62344B0B800B9E138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AC78AF92344B0B800B9E138 /* Gasculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gasculator.xcdatamodel; sourceTree = "<group>"; };
+		1AC78AFB2344B0B900B9E138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AC78AFE2344B0B900B9E138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AC78B002344B0B900B9E138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9FE7508667C5C3F23D88A2 /* Pods-Gasculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.release.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.release.xcconfig"; sourceTree = "<group>"; };
+		9D26F1E24C7105A5BFB5CC90 /* Pods-Gasculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.debug.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.debug.xcconfig"; sourceTree = "<group>"; };
+		D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gasculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28CDA1A42343C53300EA3685 /* Frameworks */ = {
+		1AC78AE92344B0B700B9E138 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C82FB1B8AF77EFDDD6137E /* Pods_Gasculator.framework in Frameworks */,
+				E5BA26237FE9E481C8223ED0 /* Pods_Gasculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11D188ED6314B0247C7A8772 /* Frameworks */ = {
+		1AC78AE32344B0B700B9E138 = {
 			isa = PBXGroup;
 			children = (
-				3FF07D531631DC606BA6EEC9 /* Pods_Gasculator.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		28CDA19E2343C53300EA3685 = {
-			isa = PBXGroup;
-			children = (
-				28CDA1A92343C53300EA3685 /* Gasculator */,
-				28CDA1A82343C53300EA3685 /* Products */,
-				2DC5C33AF08C3DC149C95BA5 /* Pods */,
-				11D188ED6314B0247C7A8772 /* Frameworks */,
+				1AC78AEE2344B0B700B9E138 /* Gasculator */,
+				1AC78AED2344B0B700B9E138 /* Products */,
+				96DC970F282C62FE8FA5C4EA /* Pods */,
+				464C1BC48B6AF6D148FB9FEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		28CDA1A82343C53300EA3685 /* Products */ = {
+		1AC78AED2344B0B700B9E138 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28CDA1A72343C53300EA3685 /* Gasculator.app */,
+				1AC78AEC2344B0B700B9E138 /* Gasculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28CDA1A92343C53300EA3685 /* Gasculator */ = {
+		1AC78AEE2344B0B700B9E138 /* Gasculator */ = {
 			isa = PBXGroup;
 			children = (
-				28CDA1AA2343C53300EA3685 /* AppDelegate.swift */,
-				28CDA1AC2343C53300EA3685 /* SceneDelegate.swift */,
-				28CDA1AE2343C53300EA3685 /* ViewController.swift */,
-				28CDA1B02343C53300EA3685 /* Main.storyboard */,
-				28CDA1B62343C53400EA3685 /* Assets.xcassets */,
-				28CDA1B82343C53400EA3685 /* LaunchScreen.storyboard */,
-				28CDA1BB2343C53400EA3685 /* Info.plist */,
-				28CDA1B32343C53300EA3685 /* Gasculator.xcdatamodeld */,
+				1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */,
+				1AC78AF12344B0B700B9E138 /* SceneDelegate.swift */,
+				1AC78AF32344B0B700B9E138 /* ViewController.swift */,
+				1AC78AF52344B0B800B9E138 /* Main.storyboard */,
+				1AC78AFB2344B0B900B9E138 /* Assets.xcassets */,
+				1AC78AFD2344B0B900B9E138 /* LaunchScreen.storyboard */,
+				1AC78B002344B0B900B9E138 /* Info.plist */,
+				1AC78AF82344B0B800B9E138 /* Gasculator.xcdatamodeld */,
 			);
 			path = Gasculator;
 			sourceTree = "<group>";
 		};
-		2DC5C33AF08C3DC149C95BA5 /* Pods */ = {
+		464C1BC48B6AF6D148FB9FEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				878F7DF0B3C99C78DD4A5A27 /* Pods-Gasculator.debug.xcconfig */,
-				9A18EF61BC30F5953CE69407 /* Pods-Gasculator.release.xcconfig */,
+				D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96DC970F282C62FE8FA5C4EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D26F1E24C7105A5BFB5CC90 /* Pods-Gasculator.debug.xcconfig */,
+				2C9FE7508667C5C3F23D88A2 /* Pods-Gasculator.release.xcconfig */,
+			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28CDA1A62343C53300EA3685 /* Gasculator */ = {
+		1AC78AEB2344B0B700B9E138 /* Gasculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28CDA1BE2343C53400EA3685 /* Build configuration list for PBXNativeTarget "Gasculator" */;
+			buildConfigurationList = 1AC78B032344B0B900B9E138 /* Build configuration list for PBXNativeTarget "Gasculator" */;
 			buildPhases = (
-				AD4FB6EA2FC557312ED28BC3 /* [CP] Check Pods Manifest.lock */,
-				28CDA1A32343C53300EA3685 /* Sources */,
-				28CDA1A42343C53300EA3685 /* Frameworks */,
-				28CDA1A52343C53300EA3685 /* Resources */,
+				7118CF5A075CAD23314A566B /* [CP] Check Pods Manifest.lock */,
+				1AC78AE82344B0B700B9E138 /* Sources */,
+				1AC78AE92344B0B700B9E138 /* Frameworks */,
+				1AC78AEA2344B0B700B9E138 /* Resources */,
+				124BCAE1F5A470548E0D6F56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -113,25 +113,25 @@
 			);
 			name = Gasculator;
 			productName = Gasculator;
-			productReference = 28CDA1A72343C53300EA3685 /* Gasculator.app */;
+			productReference = 1AC78AEC2344B0B700B9E138 /* Gasculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		28CDA19F2343C53300EA3685 /* Project object */ = {
+		1AC78AE42344B0B700B9E138 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = "UCU iOS";
+				ORGANIZATIONNAME = 4andahalf;
 				TargetAttributes = {
-					28CDA1A62343C53300EA3685 = {
+					1AC78AEB2344B0B700B9E138 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = 28CDA1A22343C53300EA3685 /* Build configuration list for PBXProject "Gasculator" */;
+			buildConfigurationList = 1AC78AE72344B0B700B9E138 /* Build configuration list for PBXProject "Gasculator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,31 +139,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 28CDA19E2343C53300EA3685;
-			productRefGroup = 28CDA1A82343C53300EA3685 /* Products */;
+			mainGroup = 1AC78AE32344B0B700B9E138;
+			productRefGroup = 1AC78AED2344B0B700B9E138 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28CDA1A62343C53300EA3685 /* Gasculator */,
+				1AC78AEB2344B0B700B9E138 /* Gasculator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		28CDA1A52343C53300EA3685 /* Resources */ = {
+		1AC78AEA2344B0B700B9E138 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CDA1BA2343C53400EA3685 /* LaunchScreen.storyboard in Resources */,
-				28CDA1B72343C53400EA3685 /* Assets.xcassets in Resources */,
-				28CDA1B22343C53300EA3685 /* Main.storyboard in Resources */,
+				1AC78AFF2344B0B900B9E138 /* LaunchScreen.storyboard in Resources */,
+				1AC78AFC2344B0B900B9E138 /* Assets.xcassets in Resources */,
+				1AC78AF72344B0B800B9E138 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AD4FB6EA2FC557312ED28BC3 /* [CP] Check Pods Manifest.lock */ = {
+		124BCAE1F5A470548E0D6F56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7118CF5A075CAD23314A566B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,32 +205,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		28CDA1A32343C53300EA3685 /* Sources */ = {
+		1AC78AE82344B0B700B9E138 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CDA1B52343C53300EA3685 /* Gasculator.xcdatamodeld in Sources */,
-				28CDA1AF2343C53300EA3685 /* ViewController.swift in Sources */,
-				28CDA1AB2343C53300EA3685 /* AppDelegate.swift in Sources */,
-				28CDA1AD2343C53300EA3685 /* SceneDelegate.swift in Sources */,
+				1AC78AFA2344B0B800B9E138 /* Gasculator.xcdatamodeld in Sources */,
+				1AC78AF42344B0B800B9E138 /* ViewController.swift in Sources */,
+				1AC78AF02344B0B700B9E138 /* AppDelegate.swift in Sources */,
+				1AC78AF22344B0B700B9E138 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		28CDA1B02343C53300EA3685 /* Main.storyboard */ = {
+		1AC78AF52344B0B800B9E138 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				28CDA1B12343C53300EA3685 /* Base */,
+				1AC78AF62344B0B800B9E138 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		28CDA1B82343C53400EA3685 /* LaunchScreen.storyboard */ = {
+		1AC78AFD2344B0B900B9E138 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				28CDA1B92343C53400EA3685 /* Base */,
+				1AC78AFE2344B0B900B9E138 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -221,7 +238,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		28CDA1BC2343C53400EA3685 /* Debug */ = {
+		1AC78B012344B0B900B9E138 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,7 +298,7 @@
 			};
 			name = Debug;
 		};
-		28CDA1BD2343C53400EA3685 /* Release */ = {
+		1AC78B022344B0B900B9E138 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -335,38 +352,36 @@
 			};
 			name = Release;
 		};
-		28CDA1BF2343C53400EA3685 /* Debug */ = {
+		1AC78B042344B0B900B9E138 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 878F7DF0B3C99C78DD4A5A27 /* Pods-Gasculator.debug.xcconfig */;
+			baseConfigurationReference = 9D26F1E24C7105A5BFB5CC90 /* Pods-Gasculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A4DA3GZF4H;
 				INFOPLIST_FILE = Gasculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.4.5.Gasculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4andahalf.Gasculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		28CDA1C02343C53400EA3685 /* Release */ = {
+		1AC78B052344B0B900B9E138 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A18EF61BC30F5953CE69407 /* Pods-Gasculator.release.xcconfig */;
+			baseConfigurationReference = 2C9FE7508667C5C3F23D88A2 /* Pods-Gasculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A4DA3GZF4H;
 				INFOPLIST_FILE = Gasculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.4.5.Gasculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.4andahalf.Gasculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,20 +391,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28CDA1A22343C53300EA3685 /* Build configuration list for PBXProject "Gasculator" */ = {
+		1AC78AE72344B0B700B9E138 /* Build configuration list for PBXProject "Gasculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				28CDA1BC2343C53400EA3685 /* Debug */,
-				28CDA1BD2343C53400EA3685 /* Release */,
+				1AC78B012344B0B900B9E138 /* Debug */,
+				1AC78B022344B0B900B9E138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28CDA1BE2343C53400EA3685 /* Build configuration list for PBXNativeTarget "Gasculator" */ = {
+		1AC78B032344B0B900B9E138 /* Build configuration list for PBXNativeTarget "Gasculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				28CDA1BF2343C53400EA3685 /* Debug */,
-				28CDA1C02343C53400EA3685 /* Release */,
+				1AC78B042344B0B900B9E138 /* Debug */,
+				1AC78B052344B0B900B9E138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -397,17 +412,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		28CDA1B32343C53300EA3685 /* Gasculator.xcdatamodeld */ = {
+		1AC78AF82344B0B800B9E138 /* Gasculator.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				28CDA1B42343C53300EA3685 /* Gasculator.xcdatamodel */,
+				1AC78AF92344B0B800B9E138 /* Gasculator.xcdatamodel */,
 			);
-			currentVersion = 28CDA1B42343C53300EA3685 /* Gasculator.xcdatamodel */;
+			currentVersion = 1AC78AF92344B0B800B9E138 /* Gasculator.xcdatamodel */;
 			path = Gasculator.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 28CDA19F2343C53300EA3685 /* Project object */;
+	rootObject = 1AC78AE42344B0B700B9E138 /* Project object */;
 }
