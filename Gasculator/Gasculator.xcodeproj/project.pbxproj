@@ -17,6 +17,9 @@
 		2830FFD42347801C00D00CF1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD32347801C00D00CF1 /* CustomButton.swift */; };
 		2830FFD72347A6AE00D00CF1 /* CarSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */; };
 		2830FFD92347A86400D00CF1 /* CarSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */; };
+		2830FFF12347F1D300D00CF1 /* GasculatorDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFED2347F1D200D00CF1 /* GasculatorDataModel.xcdatamodeld */; };
+		2830FFF22347F1D300D00CF1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFEF2347F1D200D00CF1 /* CoreDataStack.swift */; };
+		2830FFF32347F1D300D00CF1 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFF02347F1D300D00CF1 /* Car.swift */; };
 		2849C7572346755B00C0FC77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C7562346755B00C0FC77 /* MainViewController.swift */; };
 		28C04D2A23469DA5000AA6C3 /* TripDestinationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C04D2923469DA5000AA6C3 /* TripDestinationsTableViewCell.swift */; };
 		28C04D2C2346B104000AA6C3 /* LocationSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C04D2B2346B104000AA6C3 /* LocationSelectView.swift */; };
@@ -36,6 +39,9 @@
 		2830FFD32347801C00D00CF1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableViewCell.swift; sourceTree = "<group>"; };
+		2830FFEE2347F1D200D00CF1 /* GasculatorDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GasculatorDataModel.xcdatamodel; sourceTree = "<group>"; };
+		2830FFEF2347F1D200D00CF1 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		2830FFF02347F1D300D00CF1 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		2849C7562346755B00C0FC77 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		28C04D2923469DA5000AA6C3 /* TripDestinationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDestinationsTableViewCell.swift; sourceTree = "<group>"; };
 		28C04D2B2346B104000AA6C3 /* LocationSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectView.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 		1AC78AEE2344B0B700B9E138 /* Gasculator */ = {
 			isa = PBXGroup;
 			children = (
+				2830FFEC2347F1BE00D00CF1 /* CoreData */,
 				2849C7532346723200C0FC77 /* UI */,
 				1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */,
 				1AC78AF12344B0B700B9E138 /* SceneDelegate.swift */,
@@ -105,6 +112,16 @@
 				2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */,
 			);
 			path = "Car Select";
+			sourceTree = "<group>";
+		};
+		2830FFEC2347F1BE00D00CF1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2830FFF02347F1D300D00CF1 /* Car.swift */,
+				2830FFEF2347F1D200D00CF1 /* CoreDataStack.swift */,
+				2830FFED2347F1D200D00CF1 /* GasculatorDataModel.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		2849C7532346723200C0FC77 /* UI */ = {
@@ -262,10 +279,13 @@
 				2830FFD92347A86400D00CF1 /* CarSelectTableViewCell.swift in Sources */,
 				1AC78AFA2344B0B800B9E138 /* Gasculator.xcdatamodeld in Sources */,
 				28C04D2C2346B104000AA6C3 /* LocationSelectView.swift in Sources */,
+				2830FFF22347F1D300D00CF1 /* CoreDataStack.swift in Sources */,
+				2830FFF32347F1D300D00CF1 /* Car.swift in Sources */,
 				1AC78AF42344B0B800B9E138 /* ViewController.swift in Sources */,
 				2849C7572346755B00C0FC77 /* MainViewController.swift in Sources */,
 				1AC78AF02344B0B700B9E138 /* AppDelegate.swift in Sources */,
 				2830FFD42347801C00D00CF1 /* CustomButton.swift in Sources */,
+				2830FFF12347F1D300D00CF1 /* GasculatorDataModel.xcdatamodeld in Sources */,
 				2830FFD72347A6AE00D00CF1 /* CarSelectTableViewController.swift in Sources */,
 				1AC78AF22344B0B700B9E138 /* SceneDelegate.swift in Sources */,
 				28C04D2A23469DA5000AA6C3 /* TripDestinationsTableViewCell.swift in Sources */,
@@ -475,6 +495,16 @@
 			);
 			currentVersion = 1AC78AF92344B0B800B9E138 /* Gasculator.xcdatamodel */;
 			path = Gasculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		2830FFED2347F1D200D00CF1 /* GasculatorDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2830FFEE2347F1D200D00CF1 /* GasculatorDataModel.xcdatamodel */,
+			);
+			currentVersion = 2830FFEE2347F1D200D00CF1 /* GasculatorDataModel.xcdatamodel */;
+			path = GasculatorDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
