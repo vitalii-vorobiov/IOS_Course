@@ -8,10 +8,14 @@
 
 import Foundation
 import UIKit
+import GoogleMaps
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var locationSelectView: UIView!
+    @IBOutlet weak var mapView: GMSMapView!
+    
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,18 +23,45 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        self.locationSelectView.isHidden = true
+        initializeTheLocationManager()
+        self.mapView.isMyLocationEnabled = true
+    }
+    
+    func initializeTheLocationManager() {
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
+        let location = locationManager.location?.coordinate
+
+        cameraMoveToLocation(toLocation: location)
+
+    }
+    
+    func cameraMoveToLocation(toLocation: CLLocationCoordinate2D?) {
+        if toLocation != nil {
+            mapView.camera = GMSCameraPosition.camera(withTarget: toLocation!, zoom: 15)
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+        
+        self.locationSelectView.center.y += self.locationSelectView.frame.height
+        self.locationSelectView.isHidden = false
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
     }
     
     @IBAction public func showLocationSelectView(_ sender: Any) {
-        
-        // On application start, the view is hidden
-        if (self.locationSelectView.isHidden) {
-            self.locationSelectView.center.y += self.locationSelectView.frame.height
-            
-            self.locationSelectView.isHidden = false
-        }
-        
+//        self.locationSelectView.isHidden = false
         UIView.animate(withDuration: 0.3) {
          self.locationSelectView.center.y -= self.locationSelectView.frame.height
         }
