@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2830FFE42347EDEE00D00CF1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFE32347EDEE00D00CF1 /* CoreDataStack.swift */; };
+		2830FFE62347EDF400D00CF1 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFE52347EDF400D00CF1 /* Car.swift */; };
 		28CDA1AB2343C53300EA3685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA1AA2343C53300EA3685 /* AppDelegate.swift */; };
 		28CDA1AD2343C53300EA3685 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA1AC2343C53300EA3685 /* SceneDelegate.swift */; };
 		28CDA1AF2343C53300EA3685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA1AE2343C53300EA3685 /* ViewController.swift */; };
 		28CDA1B22343C53300EA3685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CDA1B02343C53300EA3685 /* Main.storyboard */; };
-		28CDA1B52343C53300EA3685 /* Gasculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28CDA1B32343C53300EA3685 /* Gasculator.xcdatamodeld */; };
 		28CDA1B72343C53400EA3685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CDA1B62343C53400EA3685 /* Assets.xcassets */; };
 		28CDA1BA2343C53400EA3685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CDA1B82343C53400EA3685 /* LaunchScreen.storyboard */; };
 		B6C82FB1B8AF77EFDDD6137E /* Pods_Gasculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF07D531631DC606BA6EEC9 /* Pods_Gasculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2830FFE22347EB8000D00CF1 /* GasculatorDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GasculatorDataModel.xcdatamodel; sourceTree = "<group>"; };
+		2830FFE32347EDEE00D00CF1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		2830FFE52347EDF400D00CF1 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		28CDA1A72343C53300EA3685 /* Gasculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gasculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CDA1AA2343C53300EA3685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28CDA1AC2343C53300EA3685 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28CDA1AE2343C53300EA3685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28CDA1B12343C53300EA3685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		28CDA1B42343C53300EA3685 /* Gasculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gasculator.xcdatamodel; sourceTree = "<group>"; };
 		28CDA1B62343C53400EA3685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28CDA1B92343C53400EA3685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28CDA1BB2343C53400EA3685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +55,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2830FFE72347EE0000D00CF1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2830FFE52347EDF400D00CF1 /* Car.swift */,
+				2830FFE32347EDEE00D00CF1 /* CoreDataStack.swift */,
+				2830FFE12347EB8000D00CF1 /* GasculatorDataModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		28CDA19E2343C53300EA3685 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +86,7 @@
 		28CDA1A92343C53300EA3685 /* Gasculator */ = {
 			isa = PBXGroup;
 			children = (
+				2830FFE72347EE0000D00CF1 /* CoreData */,
 				28CDA1AA2343C53300EA3685 /* AppDelegate.swift */,
 				28CDA1AC2343C53300EA3685 /* SceneDelegate.swift */,
 				28CDA1AE2343C53300EA3685 /* ViewController.swift */,
@@ -80,7 +94,6 @@
 				28CDA1B62343C53400EA3685 /* Assets.xcassets */,
 				28CDA1B82343C53400EA3685 /* LaunchScreen.storyboard */,
 				28CDA1BB2343C53400EA3685 /* Info.plist */,
-				28CDA1B32343C53300EA3685 /* Gasculator.xcdatamodeld */,
 			);
 			path = Gasculator;
 			sourceTree = "<group>";
@@ -91,7 +104,6 @@
 				878F7DF0B3C99C78DD4A5A27 /* Pods-Gasculator.debug.xcconfig */,
 				9A18EF61BC30F5953CE69407 /* Pods-Gasculator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -192,10 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CDA1B52343C53300EA3685 /* Gasculator.xcdatamodeld in Sources */,
 				28CDA1AF2343C53300EA3685 /* ViewController.swift in Sources */,
 				28CDA1AB2343C53300EA3685 /* AppDelegate.swift in Sources */,
+				2830FFE62347EDF400D00CF1 /* Car.swift in Sources */,
 				28CDA1AD2343C53300EA3685 /* SceneDelegate.swift in Sources */,
+				2830FFE42347EDEE00D00CF1 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,13 +410,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		28CDA1B32343C53300EA3685 /* Gasculator.xcdatamodeld */ = {
+		2830FFE12347EB8000D00CF1 /* GasculatorDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				28CDA1B42343C53300EA3685 /* Gasculator.xcdatamodel */,
+				2830FFE22347EB8000D00CF1 /* GasculatorDataModel.xcdatamodel */,
 			);
-			currentVersion = 28CDA1B42343C53300EA3685 /* Gasculator.xcdatamodel */;
-			path = Gasculator.xcdatamodeld;
+			currentVersion = 2830FFE22347EB8000D00CF1 /* GasculatorDataModel.xcdatamodel */;
+			path = GasculatorDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

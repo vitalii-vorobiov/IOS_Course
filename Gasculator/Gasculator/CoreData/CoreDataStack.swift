@@ -40,26 +40,8 @@ class CoreDataStack {
         return car
     }
     
-    func newTripPoint() -> TripPoint {
-        let tripPoint = NSEntityDescription.insertNewObject(forEntityName: "TripPoint", into: persistentContainer.viewContext) as! TripPoint
-        return tripPoint
-    }
-    
-    func newTrip() -> Trip {
-        let trip = NSEntityDescription.insertNewObject(forEntityName: "Trip", into: persistentContainer.viewContext) as! Trip
-        return trip
-    }
-    
     func remove(car: Car) {
         persistentContainer.viewContext.delete(car)
-    }
-
-    func remove(tripPoint: TripPoint) {
-        persistentContainer.viewContext.delete(tripPoint)
-    }
-    
-    func remove(trip: Trip) {
-        persistentContainer.viewContext.delete(trip)
     }
     
 }
