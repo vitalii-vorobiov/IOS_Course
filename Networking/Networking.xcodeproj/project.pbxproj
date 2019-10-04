@@ -12,7 +12,6 @@
 		B503BF2D2346B2A700F913C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503BF2C2346B2A700F913C3 /* ViewController.swift */; };
 		B503BF302346B2A700F913C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B503BF2E2346B2A700F913C3 /* Main.storyboard */; };
 		B503BF322346B2AC00F913C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B503BF312346B2AC00F913C3 /* Assets.xcassets */; };
-		B503BF352346B2AC00F913C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B503BF332346B2AC00F913C3 /* LaunchScreen.storyboard */; };
 		B503BF3E2346BC2B00F913C3 /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503BF3D2346BC2B00F913C3 /* GasStation.swift */; };
 		B503BF402346BC3900F913C3 /* GasStationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503BF3F2346BC3900F913C3 /* GasStationLoader.swift */; };
 		B503BF422346BC4D00F913C3 /* GasStationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503BF412346BC4D00F913C3 /* GasStationStorage.swift */; };
@@ -20,6 +19,9 @@
 		B503BF462346BD5100F913C3 /* GasStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503BF452346BD5100F913C3 /* GasStationViewController.swift */; };
 		B503BF482347332500F913C3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B503BF472347332500F913C3 /* Podfile */; };
 		B503BF4A234733D500F913C3 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503BF49234733D500F913C3 /* CarViewController.swift */; };
+		E74B1F6E23479CD000376FE2 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B1F6D23479CD000376FE2 /* CurveAlgorithm.swift */; };
+		E74B1F7023479D0700376FE2 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B1F6F23479D0700376FE2 /* DotCALayer.swift */; };
+		E74B1F7223479D3900376FE2 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B1F7123479D3900376FE2 /* LineChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,6 @@
 		B503BF2C2346B2A700F913C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B503BF2F2346B2A700F913C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B503BF312346B2AC00F913C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B503BF342346B2AC00F913C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B503BF362346B2AC00F913C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B503BF3D2346BC2B00F913C3 /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
 		B503BF3F2346BC3900F913C3 /* GasStationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationLoader.swift; sourceTree = "<group>"; };
@@ -40,6 +41,9 @@
 		B503BF452346BD5100F913C3 /* GasStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationViewController.swift; sourceTree = "<group>"; };
 		B503BF472347332500F913C3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B503BF49234733D500F913C3 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		E74B1F6D23479CD000376FE2 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
+		E74B1F6F23479D0700376FE2 /* DotCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
+		E74B1F7123479D3900376FE2 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +97,12 @@
 		B503BF292346B2A700F913C3 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E74B1F6C23479C2400376FE2 /* Chart */,
 				B503BF3C2346BC0A00F913C3 /* GasStation */,
 				B503BF2A2346B2A700F913C3 /* AppDelegate.swift */,
 				B503BF2C2346B2A700F913C3 /* ViewController.swift */,
 				B503BF2E2346B2A700F913C3 /* Main.storyboard */,
 				B503BF312346B2AC00F913C3 /* Assets.xcassets */,
-				B503BF332346B2AC00F913C3 /* LaunchScreen.storyboard */,
 				B503BF362346B2AC00F913C3 /* Info.plist */,
 				B503BF452346BD5100F913C3 /* GasStationViewController.swift */,
 				B503BF49234733D500F913C3 /* CarViewController.swift */,
@@ -115,6 +119,16 @@
 				B503BF432346BD3C00F913C3 /* GasStationTableViewCell.swift */,
 			);
 			path = GasStation;
+			sourceTree = "<group>";
+		};
+		E74B1F6C23479C2400376FE2 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				E74B1F6D23479CD000376FE2 /* CurveAlgorithm.swift */,
+				E74B1F6F23479D0700376FE2 /* DotCALayer.swift */,
+				E74B1F7123479D3900376FE2 /* LineChart.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +191,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B503BF352346B2AC00F913C3 /* LaunchScreen.storyboard in Resources */,
 				B503BF322346B2AC00F913C3 /* Assets.xcassets in Resources */,
 				B503BF482347332500F913C3 /* Podfile in Resources */,
 				B503BF302346B2A700F913C3 /* Main.storyboard in Resources */,
@@ -237,10 +250,13 @@
 				B503BF402346BC3900F913C3 /* GasStationLoader.swift in Sources */,
 				B503BF442346BD3C00F913C3 /* GasStationTableViewCell.swift in Sources */,
 				B503BF2D2346B2A700F913C3 /* ViewController.swift in Sources */,
+				E74B1F7223479D3900376FE2 /* LineChart.swift in Sources */,
 				B503BF462346BD5100F913C3 /* GasStationViewController.swift in Sources */,
+				E74B1F7023479D0700376FE2 /* DotCALayer.swift in Sources */,
 				B503BF422346BC4D00F913C3 /* GasStationStorage.swift in Sources */,
 				B503BF2B2346B2A700F913C3 /* AppDelegate.swift in Sources */,
 				B503BF4A234733D500F913C3 /* CarViewController.swift in Sources */,
+				E74B1F6E23479CD000376FE2 /* CurveAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +269,6 @@
 				B503BF2F2346B2A700F913C3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B503BF332346B2AC00F913C3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B503BF342346B2AC00F913C3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
