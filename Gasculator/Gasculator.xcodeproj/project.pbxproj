@@ -15,6 +15,8 @@
 		1AC78AFC2344B0B900B9E138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AFB2344B0B900B9E138 /* Assets.xcassets */; };
 		1AC78AFF2344B0B900B9E138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AFD2344B0B900B9E138 /* LaunchScreen.storyboard */; };
 		2830FFD42347801C00D00CF1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD32347801C00D00CF1 /* CustomButton.swift */; };
+		2830FFD72347A6AE00D00CF1 /* CarSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */; };
+		2830FFD92347A86400D00CF1 /* CarSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */; };
 		2849C7572346755B00C0FC77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C7562346755B00C0FC77 /* MainViewController.swift */; };
 		28C04D2A23469DA5000AA6C3 /* TripDestinationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C04D2923469DA5000AA6C3 /* TripDestinationsTableViewCell.swift */; };
 		28C04D2C2346B104000AA6C3 /* LocationSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C04D2B2346B104000AA6C3 /* LocationSelectView.swift */; };
@@ -32,6 +34,8 @@
 		1AC78AFE2344B0B900B9E138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AC78B002344B0B900B9E138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2830FFD32347801C00D00CF1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableViewCell.swift; sourceTree = "<group>"; };
 		2849C7562346755B00C0FC77 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		28C04D2923469DA5000AA6C3 /* TripDestinationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDestinationsTableViewCell.swift; sourceTree = "<group>"; };
 		28C04D2B2346B104000AA6C3 /* LocationSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectView.swift; sourceTree = "<group>"; };
@@ -94,11 +98,21 @@
 			path = "UI Extensions";
 			sourceTree = "<group>";
 		};
+		2830FFD52347A66400D00CF1 /* Car Select */ = {
+			isa = PBXGroup;
+			children = (
+				2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */,
+				2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */,
+			);
+			path = "Car Select";
+			sourceTree = "<group>";
+		};
 		2849C7532346723200C0FC77 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				2830FFD223477EAC00D00CF1 /* UI Extensions */,
 				28C04D2823469D3A000AA6C3 /* Main View */,
+				2830FFD52347A66400D00CF1 /* Car Select */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -245,12 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2830FFD92347A86400D00CF1 /* CarSelectTableViewCell.swift in Sources */,
 				1AC78AFA2344B0B800B9E138 /* Gasculator.xcdatamodeld in Sources */,
 				28C04D2C2346B104000AA6C3 /* LocationSelectView.swift in Sources */,
 				1AC78AF42344B0B800B9E138 /* ViewController.swift in Sources */,
 				2849C7572346755B00C0FC77 /* MainViewController.swift in Sources */,
 				1AC78AF02344B0B700B9E138 /* AppDelegate.swift in Sources */,
 				2830FFD42347801C00D00CF1 /* CustomButton.swift in Sources */,
+				2830FFD72347A6AE00D00CF1 /* CarSelectTableViewController.swift in Sources */,
 				1AC78AF22344B0B700B9E138 /* SceneDelegate.swift in Sources */,
 				28C04D2A23469DA5000AA6C3 /* TripDestinationsTableViewCell.swift in Sources */,
 			);

@@ -56,7 +56,7 @@
                                         <rect key="frame" x="0.0" y="84" width="414" height="327.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TripDestinationsTableViewCell" id="3Un-HL-aju" userLabel="Destination Cell" customClass="TripDestinationsTableViewCell" customModule="Gasculator" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TripDestinationsTableViewCell" translatesAutoresizingMaskIntoConstraints="NO" id="3Un-HL-aju" userLabel="Destination Cell" customClass="TripDestinationsTableViewCell" customModule="Gasculator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="67.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Un-HL-aju" id="MuH-1x-AC0">
@@ -80,7 +80,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK6-pq-61b" userLabel="Delete Button">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK6-pq-61b" userLabel="Delete Button" customClass="CustomButton" customModule="Gasculator" customModuleProvider="target">
                                                             <rect key="frame" x="364" y="20" width="30" height="28"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="hBv-bd-oiq"/>
@@ -90,6 +90,11 @@
                                                             <state key="normal" backgroundImage="clear.fill" catalog="system">
                                                                 <color key="titleColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -104,6 +109,7 @@
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="SelectButton" destination="GW5-sR-TSK" id="3qd-Xs-1GU"/>
+                                                    <outlet property="deleteButton" destination="dK6-pq-61b" id="vvl-hk-r4S"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -158,7 +164,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="GR6-Mp-WwA" kind="show" id="8WF-Lc-kEn"/>
+                                    <segue destination="r7e-m7-MFu" kind="show" id="RUG-8e-RAy"/>
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZG-Ye-Bsw" userLabel="Location Select View" customClass="LocationSelectView" customModule="Gasculator" customModuleProvider="target">
@@ -240,10 +246,75 @@
             </objects>
             <point key="canvasLocation" x="-720" y="67"/>
         </scene>
+        <!--Select Car-->
+        <scene sceneID="fHI-MR-Ybd">
+            <objects>
+                <tableViewController id="r7e-m7-MFu" customClass="CarSelectTableViewController" customModule="Gasculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BHo-Db-arZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarSelectTableViewCell" id="YsM-Tx-MK3" customClass="CarSelectTableViewCell" customModule="Gasculator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="75.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YsM-Tx-MK3" id="lm5-Mw-3ew">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="75.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Car Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulu-20-HuY" userLabel="Name Label">
+                                            <rect key="frame" x="20" y="8" width="294.5" height="26.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make and Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cS6-JM-B9k" userLabel="MakeModel Label">
+                                            <rect key="frame" x="20" y="42.5" width="133.5" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nFr-Qe-BLk" userLabel="Car Icon">
+                                            <rect key="frame" x="334.5" y="8" width="59.5" height="59.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="nFr-Qe-BLk" secondAttribute="height" multiplier="1:1" id="56i-fi-HVb"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="cS6-JM-B9k" secondAttribute="bottom" id="0wI-KO-u1Q"/>
+                                        <constraint firstItem="nFr-Qe-BLk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cS6-JM-B9k" secondAttribute="trailing" constant="30" id="8hk-hc-366"/>
+                                        <constraint firstItem="cS6-JM-B9k" firstAttribute="leading" secondItem="lm5-Mw-3ew" secondAttribute="leadingMargin" id="FqP-5Z-oLI"/>
+                                        <constraint firstItem="nFr-Qe-BLk" firstAttribute="trailing" secondItem="lm5-Mw-3ew" secondAttribute="trailingMargin" id="PGa-T1-yGU"/>
+                                        <constraint firstItem="nFr-Qe-BLk" firstAttribute="leading" secondItem="Ulu-20-HuY" secondAttribute="trailing" constant="20" id="QS6-dB-lWp"/>
+                                        <constraint firstItem="cS6-JM-B9k" firstAttribute="top" secondItem="Ulu-20-HuY" secondAttribute="bottom" constant="8" id="Tj3-fC-Fne"/>
+                                        <constraint firstItem="Ulu-20-HuY" firstAttribute="top" secondItem="lm5-Mw-3ew" secondAttribute="top" constant="8" id="dDy-FW-0cj"/>
+                                        <constraint firstAttribute="bottom" secondItem="nFr-Qe-BLk" secondAttribute="bottom" constant="8" id="jqV-fe-3Tn"/>
+                                        <constraint firstItem="nFr-Qe-BLk" firstAttribute="top" secondItem="lm5-Mw-3ew" secondAttribute="top" constant="8" id="jwW-v3-M76"/>
+                                        <constraint firstItem="Ulu-20-HuY" firstAttribute="leading" secondItem="lm5-Mw-3ew" secondAttribute="leadingMargin" id="rlX-5T-5Ud"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="carIcon" destination="nFr-Qe-BLk" id="d6d-Ct-a2s"/>
+                                    <outlet property="carMakeAndModelLabel" destination="cS6-JM-B9k" id="aJK-Dr-uG4"/>
+                                    <outlet property="carNameLabel" destination="Ulu-20-HuY" id="QmU-RM-zc1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="r7e-m7-MFu" id="AAA-wV-RLo"/>
+                            <outlet property="delegate" destination="r7e-m7-MFu" id="b3Q-bk-2Ad"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Select Car" id="kgj-m9-I2s"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qWD-r4-muE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="67"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qas-7H-sF1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="te1-Nn-na6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController modalPresentationStyle="fullScreen" id="2Jf-ls-Fq3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="H1y-6Z-d72"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jzl-g0-xDv">
@@ -257,46 +328,9 @@
                         <segue destination="KVS-AC-ldk" kind="relationship" relationship="rootViewController" id="2YV-j1-V0V"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="te1-Nn-na6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1471" y="67"/>
-        </scene>
-        <!--Select Car-->
-        <scene sceneID="jpS-OQ-Xl0">
-            <objects>
-                <viewController id="GR6-Mp-WwA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VwQ-Nv-Xb8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WRO-C1-Or9">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="OPz-Dq-a1h">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OPz-Dq-a1h" id="0Df-yQ-ATr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="WRO-C1-Or9" firstAttribute="leading" secondItem="VwQ-Nv-Xb8" secondAttribute="leading" id="Fwy-sB-FDZ"/>
-                            <constraint firstItem="WRO-C1-Or9" firstAttribute="top" secondItem="Zkj-sh-7Q2" secondAttribute="top" id="QnR-cL-TQf"/>
-                            <constraint firstAttribute="trailing" secondItem="WRO-C1-Or9" secondAttribute="trailing" id="VCl-qf-49z"/>
-                            <constraint firstAttribute="bottom" secondItem="WRO-C1-Or9" secondAttribute="bottom" id="gjv-h9-eZq"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Zkj-sh-7Q2"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Select Car" id="n8u-P2-MBp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6gP-BG-XoF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="71.014492753623188" y="66.964285714285708"/>
         </scene>
     </scenes>
     <resources>
