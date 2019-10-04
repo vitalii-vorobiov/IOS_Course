@@ -72,6 +72,8 @@ class LineChart: UIView {
     /// Contains horizontal lines
     private let gridLayer: CALayer = CALayer()
     
+    private let dotPlaceholderLayer: CALayer = CALayer()
+    
     /// An array of CGPoint on dataLayer coordinate system that the main line will go through. These points will be calculated from dataEntries array
     private var dataPoints: [CGPoint]?
 
@@ -97,6 +99,7 @@ class LineChart: UIView {
         
         gradientLayer.colors = [#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7).cgColor, UIColor.clear.cgColor]
         
+        mainLayer.addSublayer(dotPlaceholderLayer)
         self.layer.addSublayer(gridLayer)
         self.addSubview(scrollView)
         self.backgroundColor = #colorLiteral(red: 0, green: 0.3529411765, blue: 0.6156862745, alpha: 1)
@@ -112,10 +115,10 @@ class LineChart: UIView {
             gradientLayer.frame = dataLayer.frame
             dataPoints = convertDataEntriesToPoints(entries: dataEntries)
             gridLayer.frame = CGRect(x: 0, y: topSpace, width: self.frame.width, height: mainLayer.frame.height - topSpace - bottomSpace)
+            dotPlaceholderLayer.frame = CGRect(x: 0, y: topSpace, width: self.frame.width, height: mainLayer.frame.height - topSpace - bottomSpace)
             
-            
-            drawDots()
             clean()
+            drawDots()
             drawHorizontalLines()
             drawCurvedChart()
   
@@ -144,21 +147,6 @@ class LineChart: UIView {
         return []
     }
     
-    /**
-     Draw a zigzag line connecting all points in dataPoints
-     */
-//    private func drawChart() {
-//        if let dataPoints = dataPoints,
-//            dataPoints.count > 0,
-//            let path = createPath() {
-//
-//            let lineLayer = CAShapeLayer()
-//            lineLayer.path = path.cgPath
-//            lineLayer.strokeColor = UIColor.white.cgColor
-//            lineLayer.fillColor = UIColor.clear.cgColor
-//            dataLayer.addSublayer(lineLayer)
-//        }
-//    }
 
     /**
      Create a zigzag bezier path that connects all points in dataPoints
@@ -306,19 +294,22 @@ class LineChart: UIView {
         })
         dataLayer.sublayers?.forEach({$0.removeFromSuperlayer()})
         gridLayer.sublayers?.forEach({$0.removeFromSuperlayer()})
+        dotPlaceholderLayer.sublayers?.forEach({$0.removeFromSuperlayer()})
+
     }
     /**
      Create Dots on line points
      */
     private func drawDots() {
         var dotLayers: [DotCALayer] = []
+        
         if let dataPoints = dataPoints {
             for (index, dataPoint) in dataPoints.enumerated() {
                 if (index == 0 || index == dataPoints.count - 1) {
                     continue
                 }
                 let xValue = dataPoint.x - outerRadius/2
-                let yValue = (dataPoint.y) + (outerRadius * 3)
+                let yValue = (dataPoint.y - topSpace) + (outerRadius * 3)
                 let dotLayer = DotCALayer()
                 dotLayer.dotInnerColor = UIColor.white
                 dotLayer.innerRadius = innerRadius
@@ -326,8 +317,8 @@ class LineChart: UIView {
                 dotLayer.cornerRadius = outerRadius / 2
                 dotLayer.frame = CGRect(x: xValue, y: yValue, width: outerRadius, height: outerRadius)
                 dotLayers.append(dotLayer)
-
-                mainLayer.addSublayer(dotLayer)
+                dotPlaceholderLayer.addSublayer(dotLayer)
+                
 
                 if animateDots {
                     let anim = CABasicAnimation(keyPath: "opacity")
@@ -337,6 +328,8 @@ class LineChart: UIView {
                     dotLayer.add(anim, forKey: "opacity")
                 }
             }
+            
+            
         }
     }
 }

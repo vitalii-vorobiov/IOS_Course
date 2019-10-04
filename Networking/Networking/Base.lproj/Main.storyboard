@@ -103,7 +103,7 @@
                                             <constraint firstAttribute="width" constant="60" id="4tC-KA-18R"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -137,7 +137,7 @@
                                             <constraint firstAttribute="width" constant="60" id="lJd-z6-dbz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -205,7 +205,9 @@
                         <viewLayoutGuide key="safeArea" id="jal-yU-FBL"/>
                     </view>
                     <connections>
+                        <outlet property="citySpeedField" destination="1Cx-XN-uvq" id="kmm-4q-pzG"/>
                         <outlet property="curvedlineChart" destination="p5P-Qu-vP1" id="Ebj-FN-tbd"/>
+                        <outlet property="highwaySpeedField" destination="3CK-DN-6RD" id="cLI-tB-Loe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nD4-Ww-y1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -236,7 +238,7 @@
                                             <constraint firstAttribute="width" constant="60" id="hph-1N-MYb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UAH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0w7-rC-jiE">
                                         <rect key="frame" x="274" y="19.5" width="36" height="21"/>
