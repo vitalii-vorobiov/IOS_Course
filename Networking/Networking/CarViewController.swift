@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import AAInfographics
 
 class CarViewController: UIViewController {
 
@@ -29,15 +28,15 @@ class CarViewController: UIViewController {
             
             curvedlineChart.dataEntries = dataEntries
             curvedlineChart.isCurved = true
-        
-       dataEntries = [PointEntry(value: 105, label: ""),
-        PointEntry(value: 29, label: ""),
-        PointEntry(value: 100, label: ""),
-        PointEntry(value: 105, label: ""),]
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
-            self.curvedlineChart.dataEntries = dataEntries
-        })
-            
+//
+//       dataEntries = [PointEntry(value: 105, label: ""),
+//        PointEntry(value: 29, label: ""),
+//        PointEntry(value: 100, label: ""),
+//        PointEntry(value: 105, label: ""),]
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+//            self.curvedlineChart.dataEntries = dataEntries
+//        })
+//
         }
 }

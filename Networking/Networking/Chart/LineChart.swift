@@ -25,7 +25,7 @@ extension PointEntry: Comparable {
 class LineChart: UIView {
     
     /// gap between each point
-    let lineGap: CGFloat = 80.0
+    var lineGap: CGFloat = 60
     
     /// preseved space at top of the chart
     let topSpace: CGFloat = 40.0
@@ -42,7 +42,7 @@ class LineChart: UIView {
     var animateDots: Bool = false
 
     /// Active or desactive dots
-    var showDots: Bool = false
+    var showDots: Bool = true
 
     /// Dot inner Radius
     var innerRadius: CGFloat = 8
@@ -66,7 +66,8 @@ class LineChart: UIView {
     private let mainLayer: CALayer = CALayer()
     
     /// Contains mainLayer and label for each data entry
-    private let scrollView: UIScrollView = UIScrollView()
+    private let scrollView: UIView =
+        UIView()
     
     /// Contains horizontal lines
     private let gridLayer: CALayer = CALayer()
@@ -90,33 +91,34 @@ class LineChart: UIView {
     }
     
     private func setupView() {
+        scrollView.layer.addSublayer(gradientLayer)
         mainLayer.addSublayer(dataLayer)
         scrollView.layer.addSublayer(mainLayer)
         
         gradientLayer.colors = [#colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7).cgColor, UIColor.clear.cgColor]
-        scrollView.layer.addSublayer(gradientLayer)
+        
         self.layer.addSublayer(gridLayer)
         self.addSubview(scrollView)
         self.backgroundColor = #colorLiteral(red: 0, green: 0.3529411765, blue: 0.6156862745, alpha: 1)
     }
     
     override func layoutSubviews() {
+        lineGap = (self.frame.size.width - CGFloat(0.0))/CGFloat(3.0)
         scrollView.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
         if let dataEntries = dataEntries {
-            scrollView.contentSize = CGSize(width: CGFloat(dataEntries.count) * lineGap, height: self.frame.size.height)
+//            scrollView.contentSize = CGSize(width: CGFloat(dataEntries.count) * lineGap, height: self.frame.size.height)
             mainLayer.frame = CGRect(x: 0, y: 0, width: CGFloat(dataEntries.count) * lineGap, height: self.frame.size.height)
             dataLayer.frame = CGRect(x: 0, y: topSpace, width: mainLayer.frame.width, height: mainLayer.frame.height - topSpace - bottomSpace)
             gradientLayer.frame = dataLayer.frame
             dataPoints = convertDataEntriesToPoints(entries: dataEntries)
             gridLayer.frame = CGRect(x: 0, y: topSpace, width: self.frame.width, height: mainLayer.frame.height - topSpace - bottomSpace)
-            if showDots { drawDots() }
+            
+            
+            drawDots()
             clean()
             drawHorizontalLines()
-            if isCurved {
-                drawCurvedChart()
-            } else {
-                drawChart()
-            }
+            drawCurvedChart()
+  
             maskGradientLayer()
             drawLables()
         }
@@ -134,7 +136,7 @@ class LineChart: UIView {
             
             for i in 0..<entries.count {
                 let height = dataLayer.frame.height * (1 - ((CGFloat(entries[i].value) - CGFloat(min)) / minMaxRange))
-                let point = CGPoint(x: CGFloat(i)*lineGap + 40, y: height)
+                let point = CGPoint(x: CGFloat(i)*lineGap, y: height)
                 result.append(point)
             }
             return result
@@ -145,18 +147,18 @@ class LineChart: UIView {
     /**
      Draw a zigzag line connecting all points in dataPoints
      */
-    private func drawChart() {
-        if let dataPoints = dataPoints,
-            dataPoints.count > 0,
-            let path = createPath() {
-            
-            let lineLayer = CAShapeLayer()
-            lineLayer.path = path.cgPath
-            lineLayer.strokeColor = UIColor.white.cgColor
-            lineLayer.fillColor = UIColor.clear.cgColor
-            dataLayer.addSublayer(lineLayer)
-        }
-    }
+//    private func drawChart() {
+//        if let dataPoints = dataPoints,
+//            dataPoints.count > 0,
+//            let path = createPath() {
+//
+//            let lineLayer = CAShapeLayer()
+//            lineLayer.path = path.cgPath
+//            lineLayer.strokeColor = UIColor.white.cgColor
+//            lineLayer.fillColor = UIColor.clear.cgColor
+//            dataLayer.addSublayer(lineLayer)
+//        }
+//    }
 
     /**
      Create a zigzag bezier path that connects all points in dataPoints
@@ -184,9 +186,9 @@ class LineChart: UIView {
         if let path = CurveAlgorithm.shared.createCurvedPath(dataPoints) {
             let lineLayer = CAShapeLayer()
             lineLayer.path = path.cgPath
+            lineLayer.lineWidth = 5
             lineLayer.strokeColor = UIColor.white.cgColor
             lineLayer.fillColor = UIColor.clear.cgColor
-            lineLayer.lineWidth = 5
             dataLayer.addSublayer(lineLayer)
         }
     }
@@ -311,9 +313,12 @@ class LineChart: UIView {
     private func drawDots() {
         var dotLayers: [DotCALayer] = []
         if let dataPoints = dataPoints {
-            for dataPoint in dataPoints {
+            for (index, dataPoint) in dataPoints.enumerated() {
+                if (index == 0 || index == dataPoints.count - 1) {
+                    continue
+                }
                 let xValue = dataPoint.x - outerRadius/2
-                let yValue = (dataPoint.y + lineGap) - (outerRadius * 2)
+                let yValue = (dataPoint.y) + (outerRadius * 3)
                 let dotLayer = DotCALayer()
                 dotLayer.dotInnerColor = UIColor.white
                 dotLayer.innerRadius = innerRadius

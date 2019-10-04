@@ -1,21 +1,16 @@
 PODS:
-  - AAInfographics (2.0.4)
+  - IQKeyboardManagerSwift (6.5.1)
 
 DEPENDENCIES:
-  - AAInfographics (from `https://github.com/AAChartModel/AAChartKit-Swift.git`)
+  - IQKeyboardManagerSwift
 
-EXTERNAL SOURCES:
-  AAInfographics:
-    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
-
-CHECKOUT OPTIONS:
-  AAInfographics:
-    :commit: 1f9dc974918798a1d29f1181e51cd4250abef6f3
-    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
-  AAInfographics: 10f87e06fc007a0adbb05de020e4a2fe3119f8de
+  IQKeyboardManagerSwift: 9ac7524fad9f9fe9a3b98c927e7772471ca546d2
 
-PODFILE CHECKSUM: f32bc4dcbad2fd478611ae3170639061669dcdd9
+PODFILE CHECKSUM: bb64b535b94408185f00cbf91239e5c005860f23
 
 COCOAPODS: 1.8.1
