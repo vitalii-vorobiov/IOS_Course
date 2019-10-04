@@ -14,6 +14,7 @@
 		1AC78AFA2344B0B800B9E138 /* Gasculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF82344B0B800B9E138 /* Gasculator.xcdatamodeld */; };
 		1AC78AFC2344B0B900B9E138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AFB2344B0B900B9E138 /* Assets.xcassets */; };
 		1AC78AFF2344B0B900B9E138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AFD2344B0B900B9E138 /* LaunchScreen.storyboard */; };
+		B503BF1D2346AE8700F913C3 /* Networking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B503BF1C2346AE8700F913C3 /* Networking.storyboard */; };
 		E5BA26237FE9E481C8223ED0 /* Pods_Gasculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		1AC78B002344B0B900B9E138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C9FE7508667C5C3F23D88A2 /* Pods-Gasculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.release.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.release.xcconfig"; sourceTree = "<group>"; };
 		9D26F1E24C7105A5BFB5CC90 /* Pods-Gasculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.debug.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.debug.xcconfig"; sourceTree = "<group>"; };
+		B503BF1C2346AE8700F913C3 /* Networking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Networking.storyboard; sourceTree = "<group>"; };
 		D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gasculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				1AC78AFD2344B0B900B9E138 /* LaunchScreen.storyboard */,
 				1AC78B002344B0B900B9E138 /* Info.plist */,
 				1AC78AF82344B0B800B9E138 /* Gasculator.xcdatamodeld */,
+				B503BF1C2346AE8700F913C3 /* Networking.storyboard */,
 			);
 			path = Gasculator;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B503BF1D2346AE8700F913C3 /* Networking.storyboard in Resources */,
 				1AC78AFF2344B0B900B9E138 /* LaunchScreen.storyboard in Resources */,
 				1AC78AFC2344B0B900B9E138 /* Assets.xcassets in Resources */,
 				1AC78AF72344B0B800B9E138 /* Main.storyboard in Resources */,
@@ -359,13 +363,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Gasculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.4andahalf.Gasculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -377,13 +382,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Gasculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.4andahalf.Gasculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

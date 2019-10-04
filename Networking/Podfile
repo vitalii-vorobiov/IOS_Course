@@ -1,0 +1,4 @@
+target 'Networking' do
+    pod 'AAInfographics', :git => 'https://github.com/AAChartModel/AAChartKit-Swift.git'
+end
+
