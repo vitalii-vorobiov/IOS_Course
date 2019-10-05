@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CarViewController: UIViewController, UITextFieldDelegate {
+class CarViewController: UIViewController, UITextFieldDelegate, UIActionSheetDelegate {
     
     var currentCar: Car!
     
@@ -35,6 +35,26 @@ class CarViewController: UIViewController, UITextFieldDelegate {
     @IBAction func donePressed(sender: UIBarButtonItem) {
         self.currentCar.verbose()
     }
+    
+    @IBAction func deleteSheet(sender: AnyObject)
+    {
+
+         let alert = UIAlertController(title: "Delete car", message: "Are you shure to delete this car?", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (_) in
+            self.performSegue(withIdentifier: "endScreenSegue", sender: self)
+        }))
+
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: { (_) in
+            print("User click Dismiss button")
+        }))
+
+        self.present(alert, animated: true, completion: {
+            print("completion block")
+        })
+        
+    }
+    
     
     @objc func textFieldDidChangeCity(_ textField: UITextField) {
         self.currentCar.consumptionCity = Float(textField.text!) ?? 0.0
