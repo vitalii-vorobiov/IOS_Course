@@ -21,6 +21,13 @@ class Car {
     var fuelType: FuelType = .Gas95
     var consumptionCity: Float = 1.0
     var consumptionHighway: Float = 1.0
+    
+    func verbose() {
+        print(self.name)
+        print(self.fuelType.rawValue)
+        print(self.consumptionCity)
+        print(self.consumptionHighway)
+    }
 }
 
 extension Car: Hashable {

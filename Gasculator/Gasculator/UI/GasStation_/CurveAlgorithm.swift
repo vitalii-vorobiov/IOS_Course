@@ -18,7 +18,6 @@ class CurveAlgorithm {
     
     private func controlPointsFrom(points: [CGPoint]) -> [CurvedSegment] {
         var result: [CurvedSegment] = []
-        
         let delta: CGFloat = 0.3 // The value that help to choose temporary control points.
         
         // Calculate temporary control points, these control points make Bezier segments look straight and not curving at all

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CarViewController: UIViewController, UITextFieldDelegate, UIActionSheetDelegate {
+class CarSettingsViewController: UIViewController, UITextFieldDelegate, UIActionSheetDelegate {
     
     var currentCar: Car!
     
