@@ -12,7 +12,10 @@ import Foundation
 class CarLoader {
     static var shared = CarLoader()
     
-    var cars: Set<Car> = []
+    var selectedCar: Car!
+    
+//    var cars: Set<Car> = []
+    var cars: [Car] = []
     
     func newCar(carName: String, carMake: String, carModel: String, fuelType: FuelType, consumptionCity: Float, consumptionHighway: Float) -> Car {
         let car = Car()
@@ -24,13 +27,15 @@ class CarLoader {
         car.consumptionCity = consumptionCity
         car.consumptionHighway = consumptionHighway
         
-        cars.insert(car)
+        cars.insert(car, at: cars.count)
         
         return car
     }
     
     func deleteCar(carToDelete: Car) {
-        cars.remove(carToDelete)
+        if let index = cars.firstIndex(of: carToDelete) {
+            cars.remove(at: index)
+        }
     }
     
 }

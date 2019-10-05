@@ -11,7 +11,12 @@ import UIKit
 class CarSelectTableViewCell: UITableViewCell {
     @IBOutlet weak var carNameLabel: UILabel!
     @IBOutlet weak var carMakeAndModelLabel: UILabel!
-    @IBOutlet weak var carIcon: UIImageView!
+    
+    weak var car: Car!
+    
+    @IBAction func onSettingsButtonClicked(_ sender: Any) {
+        
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
