@@ -13,10 +13,12 @@ class CarSelectTableViewCell: UITableViewCell {
     @IBOutlet weak var carMakeAndModelLabel: UILabel!
     @IBOutlet weak var carIcon: UIImageView!
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+        
+//        let car = Car(
+    }
 //
 //    override func setSelected(_ selected: Bool, animated: Bool) {
 //        super.setSelected(selected, animated: animated)
