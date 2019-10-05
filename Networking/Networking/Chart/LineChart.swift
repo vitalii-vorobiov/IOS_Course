@@ -191,12 +191,9 @@ class LineChart: UIView {
             let path = UIBezierPath()
             path.move(to: CGPoint(x: dataPoints[0].x, y: dataLayer.frame.height))
             path.addLine(to: dataPoints[0])
-            if isCurved,
-                let curvedPath = CurveAlgorithm.shared.createCurvedPath(dataPoints) {
-                path.append(curvedPath)
-            } else if let straightPath = createPath() {
-                path.append(straightPath)
-            }
+                let curvedPath = CurveAlgorithm.shared.createCurvedPath(dataPoints)
+            path.append(curvedPath!)
+
             path.addLine(to: CGPoint(x: dataPoints[dataPoints.count-1].x, y: dataLayer.frame.height))
             path.addLine(to: CGPoint(x: dataPoints[0].x, y: dataLayer.frame.height))
             
