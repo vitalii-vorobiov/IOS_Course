@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <Group
-      location = "group:Base.lproj"
-      name = "Base.lproj">
-      <FileRef
-         location = "group:Main.storyboard">
-      </FileRef>
-      <FileRef
-         location = "group:Chart.storyboard">
-      </FileRef>
-   </Group>
-   <Group
-      location = "group:/Users/adriyanbevz/Documents/iOS/IOS_Course/Gasculator/Gasculator/Chart"
-      name = "Chart">
-      <FileRef
-         location = "group:CurveAlgorithm.swift">
-      </FileRef>
-      <FileRef
-         location = "group:LineChart.swift">
-      </FileRef>
-      <FileRef
-         location = "group:DotCALayer.swift">
-      </FileRef>
-   </Group>
-   <Group
-      location = "group:/Users/adriyanbevz/Documents/iOS/IOS_Course/Gasculator/Gasculator/VC"
-      name = "VC">
-      <FileRef
-         location = "group:GasStationViewController.swift">
-      </FileRef>
-      <FileRef
-         location = "group:CarSettingsViewController.swift">
-      </FileRef>
-   </Group>
    <FileRef
       location = "group:Gasculator.xcodeproj">
    </FileRef>

@@ -6,6 +6,7 @@ target 'Gasculator' do
   use_frameworks!
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'IQKeyboardManagerSwift'
   # Pods for Gasculator
 
 end

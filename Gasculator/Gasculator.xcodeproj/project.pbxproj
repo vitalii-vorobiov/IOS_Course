@@ -22,11 +22,16 @@
 		28C04D2A23469DA5000AA6C3 /* TripDestinationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C04D2923469DA5000AA6C3 /* TripDestinationsTableViewCell.swift */; };
 		28C04D2C2346B104000AA6C3 /* LocationSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C04D2B2346B104000AA6C3 /* LocationSelectView.swift */; };
 		28D53C6D234822F300F20302 /* CarSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830000A23481E8A00D00CF1 /* CarSettingsViewController.swift */; };
-		28D53C6E2348230400F20302 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830000423481E8A00D00CF1 /* DotCALayer.swift */; };
-		28D53C6F2348230700F20302 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830000223481E8A00D00CF1 /* CurveAlgorithm.swift */; };
-		28D53C702348230700F20302 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830000323481E8A00D00CF1 /* LineChart.swift */; };
 		28D53C7223482B4400F20302 /* NewCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D53C7123482B4400F20302 /* NewCarTableViewCell.swift */; };
 		E5BA26237FE9E481C8223ED0 /* Pods_Gasculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */; };
+		E7D463852348A59D006D1285 /* GasStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D463842348A59D006D1285 /* GasStationViewController.swift */; };
+		E7D463872348A5F1006D1285 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D463862348A5F1006D1285 /* CurveAlgorithm.swift */; };
+		E7D463892348A60D006D1285 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D463882348A60D006D1285 /* DotCALayer.swift */; };
+		E7D4638B2348A627006D1285 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4638A2348A627006D1285 /* LineChart.swift */; };
+		E7D4638E2348A710006D1285 /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4638D2348A710006D1285 /* GasStation.swift */; };
+		E7D463902348A72A006D1285 /* GasStationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D4638F2348A72A006D1285 /* GasStationLoader.swift */; };
+		E7D463922348A746006D1285 /* GasStationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D463912348A746006D1285 /* GasStationStorage.swift */; };
+		E7D463942348A7B7006D1285 /* GasStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D463932348A7B7006D1285 /* GasStationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +43,6 @@
 		1AC78AFB2344B0B900B9E138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AC78AFE2344B0B900B9E138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AC78B002344B0B900B9E138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2830000223481E8A00D00CF1 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
-		2830000323481E8A00D00CF1 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
-		2830000423481E8A00D00CF1 /* DotCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
-		2830000923481E8A00D00CF1 /* GasStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationViewController.swift; sourceTree = "<group>"; };
 		2830000A23481E8A00D00CF1 /* CarSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSettingsViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		2830FFD32347801C00D00CF1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
@@ -55,6 +56,14 @@
 		2C9FE7508667C5C3F23D88A2 /* Pods-Gasculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.release.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.release.xcconfig"; sourceTree = "<group>"; };
 		9D26F1E24C7105A5BFB5CC90 /* Pods-Gasculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.debug.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.debug.xcconfig"; sourceTree = "<group>"; };
 		D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gasculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D463842348A59D006D1285 /* GasStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationViewController.swift; sourceTree = "<group>"; };
+		E7D463862348A5F1006D1285 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurveAlgorithm.swift; path = Gasculator/UI/GasStations_/CurveAlgorithm.swift; sourceTree = SOURCE_ROOT; };
+		E7D463882348A60D006D1285 /* DotCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DotCALayer.swift; path = Gasculator/UI/GasStations_/DotCALayer.swift; sourceTree = SOURCE_ROOT; };
+		E7D4638A2348A627006D1285 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LineChart.swift; path = Gasculator/UI/GasStations_/LineChart.swift; sourceTree = SOURCE_ROOT; };
+		E7D4638D2348A710006D1285 /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
+		E7D4638F2348A72A006D1285 /* GasStationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationLoader.swift; sourceTree = "<group>"; };
+		E7D463912348A746006D1285 /* GasStationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationStorage.swift; sourceTree = "<group>"; };
+		E7D463932348A7B7006D1285 /* GasStationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +99,8 @@
 		1AC78AEE2344B0B700B9E138 /* Gasculator */ = {
 			isa = PBXGroup;
 			children = (
+				E7D4638C2348A6E2006D1285 /* GasStation */,
 				2830000523481E8A00D00CF1 /* Chart */,
-				2830000B23481E8A00D00CF1 /* VC */,
 				2830FFF9234806F000D00CF1 /* Persistence */,
 				2849C7532346723200C0FC77 /* UI */,
 				1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */,
@@ -108,21 +117,12 @@
 		2830000523481E8A00D00CF1 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				2830000223481E8A00D00CF1 /* CurveAlgorithm.swift */,
-				2830000323481E8A00D00CF1 /* LineChart.swift */,
-				2830000423481E8A00D00CF1 /* DotCALayer.swift */,
+				E7D463862348A5F1006D1285 /* CurveAlgorithm.swift */,
+				E7D463882348A60D006D1285 /* DotCALayer.swift */,
+				E7D4638A2348A627006D1285 /* LineChart.swift */,
 			);
 			name = Chart;
 			path = /Users/adriyanbevz/Documents/iOS/IOS_Course/Gasculator/Gasculator/Chart;
-			sourceTree = "<absolute>";
-		};
-		2830000B23481E8A00D00CF1 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				2830000923481E8A00D00CF1 /* GasStationViewController.swift */,
-			);
-			name = VC;
-			path = /Users/adriyanbevz/Documents/iOS/IOS_Course/Gasculator/Gasculator/VC;
 			sourceTree = "<absolute>";
 		};
 		2830FFD223477EAC00D00CF1 /* UI Extensions */ = {
@@ -155,10 +155,11 @@
 		2849C7532346723200C0FC77 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E7D463822348A0A2006D1285 /* GasStation_ */,
 				2830FFD223477EAC00D00CF1 /* UI Extensions */,
 				28C04D2823469D3A000AA6C3 /* Main View */,
 				2830FFD52347A66400D00CF1 /* Car Select */,
-				28D53C6C2348203C00F20302 /* Car Settings */,
+				28D53C6C2348203C00F20302 /* Car Settings_ */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -173,12 +174,12 @@
 			path = "Main View";
 			sourceTree = "<group>";
 		};
-		28D53C6C2348203C00F20302 /* Car Settings */ = {
+		28D53C6C2348203C00F20302 /* Car Settings_ */ = {
 			isa = PBXGroup;
 			children = (
 				2830000A23481E8A00D00CF1 /* CarSettingsViewController.swift */,
 			);
-			path = "Car Settings";
+			path = "Car Settings_";
 			sourceTree = "<group>";
 		};
 		464C1BC48B6AF6D148FB9FEB /* Frameworks */ = {
@@ -196,6 +197,25 @@
 				2C9FE7508667C5C3F23D88A2 /* Pods-Gasculator.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E7D463822348A0A2006D1285 /* GasStation_ */ = {
+			isa = PBXGroup;
+			children = (
+				E7D463842348A59D006D1285 /* GasStationViewController.swift */,
+				E7D463932348A7B7006D1285 /* GasStationTableViewCell.swift */,
+			);
+			path = GasStation_;
+			sourceTree = "<group>";
+		};
+		E7D4638C2348A6E2006D1285 /* GasStation */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4638D2348A710006D1285 /* GasStation.swift */,
+				E7D4638F2348A72A006D1285 /* GasStationLoader.swift */,
+				E7D463912348A746006D1285 /* GasStationStorage.swift */,
+			);
+			path = GasStation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,20 +335,25 @@
 			files = (
 				2830FFD92347A86400D00CF1 /* CarSelectTableViewCell.swift in Sources */,
 				28C04D2C2346B104000AA6C3 /* LocationSelectView.swift in Sources */,
+				E7D4638B2348A627006D1285 /* LineChart.swift in Sources */,
 				1AC78AF42344B0B800B9E138 /* ViewController.swift in Sources */,
+				E7D463892348A60D006D1285 /* DotCALayer.swift in Sources */,
 				2849C7572346755B00C0FC77 /* MainViewController.swift in Sources */,
+				E7D4638E2348A710006D1285 /* GasStation.swift in Sources */,
 				1AC78AF02344B0B700B9E138 /* AppDelegate.swift in Sources */,
-				28D53C6F2348230700F20302 /* CurveAlgorithm.swift in Sources */,
+				E7D463922348A746006D1285 /* GasStationStorage.swift in Sources */,
 				2830FFFB2348071F00D00CF1 /* Car.swift in Sources */,
 				28D53C7223482B4400F20302 /* NewCarTableViewCell.swift in Sources */,
 				2830FFD42347801C00D00CF1 /* CustomButton.swift in Sources */,
-				28D53C6E2348230400F20302 /* DotCALayer.swift in Sources */,
+				E7D463902348A72A006D1285 /* GasStationLoader.swift in Sources */,
 				2830FFD72347A6AE00D00CF1 /* CarSelectTableViewController.swift in Sources */,
 				28D53C6D234822F300F20302 /* CarSettingsViewController.swift in Sources */,
 				1AC78AF22344B0B700B9E138 /* SceneDelegate.swift in Sources */,
 				28C04D2A23469DA5000AA6C3 /* TripDestinationsTableViewCell.swift in Sources */,
 				2830FFFD234807ED00D00CF1 /* CarLoader.swift in Sources */,
-				28D53C702348230700F20302 /* LineChart.swift in Sources */,
+				E7D463852348A59D006D1285 /* GasStationViewController.swift in Sources */,
+				E7D463872348A5F1006D1285 /* CurveAlgorithm.swift in Sources */,
+				E7D463942348A7B7006D1285 /* GasStationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
