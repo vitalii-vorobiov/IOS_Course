@@ -13,8 +13,6 @@ import UIKit
 
 class CarSelectTableViewController: UITableViewController {
     
-    @IBOutlet weak var carSettingsViewController: CarSettingsViewController!
-    
     @IBAction public func openCarSettings(_ sender: UIButton) {
         if let parentCarCell = sender.superview as? CarSelectTableViewCell {
             CarLoader.shared.selectedCar = parentCarCell.car
