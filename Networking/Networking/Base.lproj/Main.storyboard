@@ -325,9 +325,14 @@
                         <viewLayoutGuide key="safeArea" id="tmc-la-qIN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Prices" id="c1Q-6d-0ck">
-                        <barButtonItem key="rightBarButtonItem" title="OK" id="QhS-Ko-2cE"/>
+                        <barButtonItem key="rightBarButtonItem" title="OK" id="QhS-Ko-2cE">
+                            <connections>
+                                <action selector="okPressed:" destination="ETT-Mw-UaV" id="dQv-7e-PMs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="gasPriceField" destination="xzU-GB-KCP" id="MCn-yV-IPO"/>
                         <outlet property="tableView" destination="V7d-5A-Pgl" id="rfM-Ls-KkQ"/>
                     </connections>
                 </viewController>
