@@ -36,6 +36,8 @@ class CarSettingsViewController: UIViewController, UITextFieldDelegate, UIAction
     }
     
     @IBAction func donePressed(sender: UIBarButtonItem) {
+        CoreDataStack.shared.saveContext()
+        self.navigationController?.popViewController(animated: true)
 //        self.currentCar.verbose()
     }
     

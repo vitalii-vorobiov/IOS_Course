@@ -13,4 +13,6 @@ class DataManager {
     static var shared = DataManager()
     
     var selectedCar: Car!
+    var tripDuration: Int!
+    var tripDistance: Int!
 }
