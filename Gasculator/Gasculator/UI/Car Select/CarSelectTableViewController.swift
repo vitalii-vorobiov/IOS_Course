@@ -13,20 +13,12 @@ import UIKit
 
 class CarSelectTableViewController: UITableViewController {
     
-    @IBOutlet weak var carSettingsViewController: CarSettingsViewController!
+//    @IBOutlet weak var carSettingsViewController: CarSettingsViewController!
     
-    @IBAction public func openCarSettings(_ sender: UIButton) {
-        if let parentCarCell = sender.superview as? CarSelectTableViewCell {
-            CarLoader.shared.selectedCar = parentCarCell.car
-            self.performSegue(withIdentifier: "GoToCarSettings", sender: self)
-        }
-    }
-    
-    @IBAction public func addNewCar(_ sender: UIButton) {
-        let car = CarLoader.shared.newCar(carName: "New Car", carMake: "Make", carModel: "Model", fuelType: .Gas95, consumptionCity: 15.0, consumptionHighway: 8.0)
-        CarLoader.shared.selectedCar = car
+    @IBAction public func addNewCarClicked(_ sender: UIButton) {
+        let car = CoreDataStack.shared.newCar();
+        DataManager.shared.selectedCar = car
         self.performSegue(withIdentifier: "GoToCarSettings", sender: self)
-        self.tableView.reloadData()
     }
     
     override func viewDidLoad() {
@@ -45,24 +37,43 @@ class CarSelectTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(CarLoader.shared.cars)
-        return CarLoader.shared.cars.count
+        return CoreDataStack.shared.getCars().count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CarSelectTableViewCell", for: indexPath) as! CarSelectTableViewCell
-        print(indexPath.row)
-        let car = CarLoader.shared.cars[indexPath.row]
+        cell.delegate = self
+        let car = CoreDataStack.shared.getCars()[indexPath.row]
         cell.carNameLabel.text = car.name
-        cell.carMakeAndModelLabel.text = car.make + " " + car.model
+        cell.carMakeAndModelLabel.text = (car.make ?? "Make") + " " + (car.model ?? "Model")
             
+        cell.car = car
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        carSettingsViewController.currentCar = CarLoader.shared.cars[indexPath.count]
+        DataManager.shared.selectedCar = CoreDataStack.shared.getCars()[indexPath.row]
+        self.performSegue(withIdentifier: "GoToCarSettings", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        print(segue.identifier)
+        //        switch segue.identifier {
+//        case "a":
+//
+//        default:
+//            <#code#>
+//        }
     }
 
 }
 
+
+extension CarSelectTableViewController: SettingsButtonDelegate {
+    func settingsButtonClicked(with car: Car?) {
+        DataManager.shared.selectedCar = car
+        self.performSegue(withIdentifier: "GoToCarSettings", sender: self)
+    }
+}

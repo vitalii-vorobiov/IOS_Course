@@ -9,51 +9,63 @@
 import Foundation
 import UIKit
 
-class CarSettingsViewController: UIViewController, UITextFieldDelegate {
+class CarSettingsViewController: UIViewController, UITextFieldDelegate, UIActionSheetDelegate {
     
-//    var currentCar: Car!
+    var currentCar: Car!
     
-    @IBOutlet weak var citySpeedField: UITextField!
-    @IBOutlet weak var highwaySpeedField: UITextField!
-    @IBOutlet weak var curvedlineChart: LineChart!
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var makeField: UITextField!
+    @IBOutlet weak var modelField: UITextField!
+    @IBOutlet weak var cityConsumptionField: UITextField!
+    @IBOutlet weak var highwayConsumptionField: UITextField!
+    @IBOutlet weak var consumptionChart: LineChart!
     
     @IBOutlet weak var fuelChoice: UISegmentedControl!
     
     @IBAction func indexChanged(sender : UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            CarLoader.shared.selectedCar.fuelType = FuelType.Gas95
+            currentCar.fuelType = FuelType.Gas95
         case 1:
-            CarLoader.shared.selectedCar.fuelType = FuelType.Gas92
+            currentCar.fuelType = FuelType.Gas92
         case 2:
-            CarLoader.shared.selectedCar.fuelType = FuelType.Diesel
+            currentCar.fuelType = FuelType.Diesel
         default:
             break;
         }
-        
-        //        switch sender.selectedSegmentIndex {
-//        case 0:
-//            currentCar.fuelType = FuelType.Gas95
-//        case 1:
-//            currentCar.fuelType = FuelType.Gas92
-//        case 2:
-//            currentCar.fuelType = FuelType.Diesel
-//        default:
-//            break;
-//        }
     }
     
     @IBAction func donePressed(sender: UIBarButtonItem) {
 //        self.currentCar.verbose()
     }
     
-    @objc func textFieldDidChangeCity(_ textField: UITextField) {
-        CarLoader.shared.selectedCar.consumptionCity = Float(textField.text!) ?? 0.0
+    @IBAction func deletePressed(sender: AnyObject)
+    {
+
+         let alert = UIAlertController(title: "Delete car", message: "Are you shure to delete this car?", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (_) in
+            self.performSegue(withIdentifier: "endScreenSegue", sender: self)
+        }))
+
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: { (_) in
+            print("User click Dismiss button")
+        }))
+
+        self.present(alert, animated: true, completion: {
+            print("completion block")
+        })
+        
+    }
+    
+    
+    @objc func fieldDidChangeCity(_ textField: UITextField) {
+        self.currentCar.consumptionCity = Float(textField.text!) ?? 0.0
         self.updateChart()
     }
     
-    @objc func textFieldDidChangeHighway(_ textField: UITextField) {
-        CarLoader.shared.selectedCar.consumptionHighway = Float(textField.text!) ?? 0.0
+    @objc func fieldDidChangeHighway(_ textField: UITextField) {
+        self.currentCar.consumptionHighway = Float(textField.text!) ?? 0.0
         self.updateChart()
     }
     
@@ -78,49 +90,45 @@ class CarSettingsViewController: UIViewController, UITextFieldDelegate {
     
     
     func loadCar() {
-        CarLoader.shared.selectedCar = Car()
-        CarLoader.shared.selectedCar.name = "Model S"
-        CarLoader.shared.selectedCar.fuelType = FuelType.Diesel
-        CarLoader.shared.selectedCar.consumptionCity = 20.0
-        CarLoader.shared.selectedCar.consumptionHighway = 10.0
-        
+        self.currentCar = DataManager.shared.selectedCar
     }
     
     func updateChart() {
-        curvedlineChart.dataEntries = [
-                PointEntry(value: Int(CarLoader.shared.selectedCar.consumptionCity), label: ""),
-                PointEntry(value: Int(CarLoader.shared.selectedCar.consumptionCity), label: ""),
-                PointEntry(value: Int(CarLoader.shared.selectedCar.consumptionHighway), label: ""),
-                PointEntry(value: Int(CarLoader.shared.selectedCar.consumptionHighway) + 1, label: ""),
+        consumptionChart.dataEntries = [
+            PointEntry(value: Int(self.currentCar.consumptionCity * 1.2), label: ""),
+                PointEntry(value: Int(self.currentCar.consumptionCity), label: ""),
+                PointEntry(value: Int(self.currentCar.consumptionHighway), label: ""),
+                PointEntry(value: Int(self.currentCar.consumptionHighway * 1.2), label: "")
             ]
-        self.citySpeedField.placeholder = String(CarLoader.shared.selectedCar.consumptionCity)
-        self.highwaySpeedField.placeholder = String(CarLoader.shared.selectedCar.consumptionHighway)
+        }
+    
+    override func viewDidLoad() {
+        cityConsumptionField.delegate = self
+        highwayConsumptionField.delegate = self
+    
+        loadCar()
         
-        switch CarLoader.shared.selectedCar.fuelType {
+        nameField.text = currentCar.name
+        makeField.text = currentCar.make
+        modelField.text = currentCar.model
+        
+        cityConsumptionField.text = String(currentCar.consumptionCity)
+        highwayConsumptionField.text = String(currentCar.consumptionHighway)
+        
+        switch self.currentCar.fuelType {
         case .Gas92:
             self.fuelChoice.selectedSegmentIndex = 0
         case .Gas95:
             self.fuelChoice.selectedSegmentIndex = 1
-        
         case .Diesel:
             self.fuelChoice.selectedSegmentIndex = 2
-
         }
         
-        }
-    
-    override func viewDidLoad() {
-       citySpeedField.delegate = self
-       highwaySpeedField.delegate = self
-       super.viewDidLoad()
+        self.updateChart()
        
-       self.loadCar()
-       self.updateChart()
-       
-       
-       citySpeedField.addTarget(self, action: #selector(self.textFieldDidChangeCity(_:)), for: UIControl.Event.editingChanged)
-       highwaySpeedField.addTarget(self, action: #selector(self.textFieldDidChangeHighway(_:)), for: UIControl.Event.editingChanged)
-       
-    
+        cityConsumptionField.addTarget(self, action: #selector(self.fieldDidChangeCity(_:)), for: UIControl.Event.editingChanged)
+        highwayConsumptionField.addTarget(self, action: #selector(self.fieldDidChangeHighway(_:)), for: UIControl.Event.editingChanged)
+        
+        super.viewDidLoad()
     }
 }

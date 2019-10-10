@@ -8,14 +8,22 @@
 
 import UIKit
 
+protocol SettingsButtonDelegate: class {
+    func settingsButtonClicked(with car: Car?)
+}
+
 class CarSelectTableViewCell: UITableViewCell {
     @IBOutlet weak var carNameLabel: UILabel!
     @IBOutlet weak var carMakeAndModelLabel: UILabel!
     
-    weak var car: Car!
+    weak var delegate: SettingsButtonDelegate?
+    
+    weak var car: Car?
     
     @IBAction func onSettingsButtonClicked(_ sender: Any) {
-        
+        print(car)
+//        DataManager.shared.selectedCar = car
+        delegate?.settingsButtonClicked(with: car)
     }
     
     override func awakeFromNib() {

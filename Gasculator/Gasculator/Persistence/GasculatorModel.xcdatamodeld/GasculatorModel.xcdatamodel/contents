@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Car" representedClassName="Car" syncable="YES">
+        <attribute name="consumptionCity" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="consumptionHighway" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="fuelTypeString" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="make" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="model" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString=""/>
+    </entity>
+    <elements>
+        <element name="Car" positionX="-63" positionY="-18" width="128" height="133"/>
+    </elements>
+</model>

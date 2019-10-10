@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import GoogleMaps
 import GooglePlaces
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyD369yTM5jm7xUhI1jJJ3WOpbHyTZ9QBng")
         GMSPlacesClient.provideAPIKey("AIzaSyD369yTM5jm7xUhI1jJJ3WOpbHyTZ9QBng")
+        IQKeyboardManager.shared.enable = true
         return true
     }
 

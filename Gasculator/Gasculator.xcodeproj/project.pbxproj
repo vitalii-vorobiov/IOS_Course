@@ -16,8 +16,7 @@
 		2830FFD42347801C00D00CF1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD32347801C00D00CF1 /* CustomButton.swift */; };
 		2830FFD72347A6AE00D00CF1 /* CarSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */; };
 		2830FFD92347A86400D00CF1 /* CarSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */; };
-		2830FFFB2348071F00D00CF1 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFFA2348071F00D00CF1 /* Car.swift */; };
-		2830FFFD234807ED00D00CF1 /* CarLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFFC234807ED00D00CF1 /* CarLoader.swift */; };
+		2830FFFD234807ED00D00CF1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFFC234807ED00D00CF1 /* DataManager.swift */; };
 		2849C7572346755B00C0FC77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C7562346755B00C0FC77 /* MainViewController.swift */; };
 		28C04D2A23469DA5000AA6C3 /* TripDestinationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C04D2923469DA5000AA6C3 /* TripDestinationsTableViewCell.swift */; };
 		28C04D2C2346B104000AA6C3 /* LocationSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C04D2B2346B104000AA6C3 /* LocationSelectView.swift */; };
@@ -25,7 +24,10 @@
 		28D53C6E2348230400F20302 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830000423481E8A00D00CF1 /* DotCALayer.swift */; };
 		28D53C6F2348230700F20302 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830000223481E8A00D00CF1 /* CurveAlgorithm.swift */; };
 		28D53C702348230700F20302 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830000323481E8A00D00CF1 /* LineChart.swift */; };
-		28D53C7223482B4400F20302 /* NewCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D53C7123482B4400F20302 /* NewCarTableViewCell.swift */; };
+		28EABF552348A4710083F736 /* GasculatorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EABF532348A4710083F736 /* GasculatorModel.xcdatamodeld */; };
+		28EABF572348A8E90083F736 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EABF562348A8E90083F736 /* CoreDataStack.swift */; };
+		28EABF5A2348A9410083F736 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EABF582348A9400083F736 /* Car+CoreDataClass.swift */; };
+		28EABF5B2348A9410083F736 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EABF592348A9410083F736 /* Car+CoreDataProperties.swift */; };
 		E5BA26237FE9E481C8223ED0 /* Pods_Gasculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,17 +43,18 @@
 		2830000223481E8A00D00CF1 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
 		2830000323481E8A00D00CF1 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		2830000423481E8A00D00CF1 /* DotCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
-		2830000923481E8A00D00CF1 /* GasStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationViewController.swift; sourceTree = "<group>"; };
 		2830000A23481E8A00D00CF1 /* CarSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSettingsViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		2830FFD32347801C00D00CF1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableViewCell.swift; sourceTree = "<group>"; };
-		2830FFFA2348071F00D00CF1 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		2830FFFC234807ED00D00CF1 /* CarLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarLoader.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		2830FFFC234807ED00D00CF1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		2849C7562346755B00C0FC77 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		28C04D2923469DA5000AA6C3 /* TripDestinationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDestinationsTableViewCell.swift; sourceTree = "<group>"; };
 		28C04D2B2346B104000AA6C3 /* LocationSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectView.swift; sourceTree = "<group>"; };
-		28D53C7123482B4400F20302 /* NewCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCarTableViewCell.swift; sourceTree = "<group>"; };
+		28EABF542348A4710083F736 /* GasculatorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GasculatorModel.xcdatamodel; sourceTree = "<group>"; };
+		28EABF562348A8E90083F736 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		28EABF582348A9400083F736 /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Car+CoreDataClass.swift"; path = "/Users/adriyanbevz/Documents/iOS/IOS_Course/Gasculator/Gasculator/Car+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		28EABF592348A9410083F736 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Car+CoreDataProperties.swift"; path = "/Users/adriyanbevz/Documents/iOS/IOS_Course/Gasculator/Gasculator/Car+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		2C9FE7508667C5C3F23D88A2 /* Pods-Gasculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.release.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.release.xcconfig"; sourceTree = "<group>"; };
 		9D26F1E24C7105A5BFB5CC90 /* Pods-Gasculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.debug.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.debug.xcconfig"; sourceTree = "<group>"; };
 		D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gasculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,8 +93,8 @@
 		1AC78AEE2344B0B700B9E138 /* Gasculator */ = {
 			isa = PBXGroup;
 			children = (
+				280F9287234E3FA900EAD6A3 /* Data Manager */,
 				2830000523481E8A00D00CF1 /* Chart */,
-				2830000B23481E8A00D00CF1 /* VC */,
 				2830FFF9234806F000D00CF1 /* Persistence */,
 				2849C7532346723200C0FC77 /* UI */,
 				1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */,
@@ -105,6 +108,14 @@
 			path = Gasculator;
 			sourceTree = "<group>";
 		};
+		280F9287234E3FA900EAD6A3 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2830FFFC234807ED00D00CF1 /* DataManager.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
 		2830000523481E8A00D00CF1 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,15 +125,6 @@
 			);
 			name = Chart;
 			path = /Users/adriyanbevz/Documents/iOS/IOS_Course/Gasculator/Gasculator/Chart;
-			sourceTree = "<absolute>";
-		};
-		2830000B23481E8A00D00CF1 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				2830000923481E8A00D00CF1 /* GasStationViewController.swift */,
-			);
-			name = VC;
-			path = /Users/adriyanbevz/Documents/iOS/IOS_Course/Gasculator/Gasculator/VC;
 			sourceTree = "<absolute>";
 		};
 		2830FFD223477EAC00D00CF1 /* UI Extensions */ = {
@@ -138,7 +140,6 @@
 			children = (
 				2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */,
 				2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */,
-				28D53C7123482B4400F20302 /* NewCarTableViewCell.swift */,
 			);
 			path = "Car Select";
 			sourceTree = "<group>";
@@ -146,8 +147,10 @@
 		2830FFF9234806F000D00CF1 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				2830FFFA2348071F00D00CF1 /* Car.swift */,
-				2830FFFC234807ED00D00CF1 /* CarLoader.swift */,
+				28EABF582348A9400083F736 /* Car+CoreDataClass.swift */,
+				28EABF592348A9410083F736 /* Car+CoreDataProperties.swift */,
+				28EABF532348A4710083F736 /* GasculatorModel.xcdatamodeld */,
+				28EABF562348A8E90083F736 /* CoreDataStack.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				1AC78AE92344B0B700B9E138 /* Frameworks */,
 				1AC78AEA2344B0B700B9E138 /* Resources */,
 				124BCAE1F5A470548E0D6F56 /* [CP] Copy Pods Resources */,
+				37745F3B4246E82943CB60FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +288,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		37745F3B4246E82943CB60FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7118CF5A075CAD23314A566B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,19 +336,21 @@
 			files = (
 				2830FFD92347A86400D00CF1 /* CarSelectTableViewCell.swift in Sources */,
 				28C04D2C2346B104000AA6C3 /* LocationSelectView.swift in Sources */,
+				28EABF552348A4710083F736 /* GasculatorModel.xcdatamodeld in Sources */,
+				28EABF572348A8E90083F736 /* CoreDataStack.swift in Sources */,
 				1AC78AF42344B0B800B9E138 /* ViewController.swift in Sources */,
 				2849C7572346755B00C0FC77 /* MainViewController.swift in Sources */,
 				1AC78AF02344B0B700B9E138 /* AppDelegate.swift in Sources */,
 				28D53C6F2348230700F20302 /* CurveAlgorithm.swift in Sources */,
-				2830FFFB2348071F00D00CF1 /* Car.swift in Sources */,
-				28D53C7223482B4400F20302 /* NewCarTableViewCell.swift in Sources */,
+				28EABF5A2348A9410083F736 /* Car+CoreDataClass.swift in Sources */,
 				2830FFD42347801C00D00CF1 /* CustomButton.swift in Sources */,
 				28D53C6E2348230400F20302 /* DotCALayer.swift in Sources */,
 				2830FFD72347A6AE00D00CF1 /* CarSelectTableViewController.swift in Sources */,
 				28D53C6D234822F300F20302 /* CarSettingsViewController.swift in Sources */,
 				1AC78AF22344B0B700B9E138 /* SceneDelegate.swift in Sources */,
+				28EABF5B2348A9410083F736 /* Car+CoreDataProperties.swift in Sources */,
 				28C04D2A23469DA5000AA6C3 /* TripDestinationsTableViewCell.swift in Sources */,
-				2830FFFD234807ED00D00CF1 /* CarLoader.swift in Sources */,
+				2830FFFD234807ED00D00CF1 /* DataManager.swift in Sources */,
 				28D53C702348230700F20302 /* LineChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +549,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28EABF532348A4710083F736 /* GasculatorModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28EABF542348A4710083F736 /* GasculatorModel.xcdatamodel */,
+			);
+			currentVersion = 28EABF542348A4710083F736 /* GasculatorModel.xcdatamodel */;
+			path = GasculatorModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1AC78AE42344B0B700B9E138 /* Project object */;
 }
