@@ -28,6 +28,8 @@ class CarSelectTableViewController: UITableViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+        
         super.viewWillAppear(animated)
     }
 
@@ -45,8 +47,9 @@ class CarSelectTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CarSelectTableViewCell", for: indexPath) as! CarSelectTableViewCell
         cell.delegate = self
         let car = CoreDataStack.shared.getCars()[indexPath.row]
-        cell.carNameLabel.text = car.name
-        cell.carMakeAndModelLabel.text = (car.make ?? "Make") + " " + (car.model ?? "Model")
+        cell.carNameLabel.text = car.name == "" ? "No name" : car.name
+        let makeModel = (car.make ?? "Make") + " " + (car.model ?? "Model")
+        cell.carMakeAndModelLabel.text = makeModel
             
         cell.car = car
         
