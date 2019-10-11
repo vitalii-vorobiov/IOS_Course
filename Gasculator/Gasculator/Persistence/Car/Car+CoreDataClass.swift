@@ -1,6 +1,6 @@
 //
 //  Car+CoreDataClass.swift
-//  
+//
 //
 //  Created by Adriyan Bevz on 10/5/19.
 //

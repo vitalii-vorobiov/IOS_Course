@@ -10,26 +10,24 @@
 		1AC78AF72344B0B800B9E138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AF52344B0B800B9E138 /* Main.storyboard */; };
 		1AC78AFC2344B0B900B9E138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AFB2344B0B900B9E138 /* Assets.xcassets */; };
 		1AC78AFF2344B0B900B9E138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AFD2344B0B900B9E138 /* LaunchScreen.storyboard */; };
-		BE91D505234FB05B000FAA34 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFFC234807ED00D00CF1 /* DataManager.swift */; };
-		BE91D50C234FB05B000FAA34 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EABF562348A8E90083F736 /* CoreDataStack.swift */; };
-		BE91D50D234FB05B000FAA34 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD32347801C00D00CF1 /* CustomButton.swift */; };
-		BE91D50E234FB05B000FAA34 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849C7562346755B00C0FC77 /* MainViewController.swift */; };
-		BE91D50F234FB05B000FAA34 /* TripDestinationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C04D2923469DA5000AA6C3 /* TripDestinationsTableViewCell.swift */; };
-		BE91D510234FB05B000FAA34 /* LocationSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C04D2B2346B104000AA6C3 /* LocationSelectView.swift */; };
-		BE91D511234FB05B000FAA34 /* CarSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */; };
-		BE91D512234FB05B000FAA34 /* CarSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */; };
-		BE91D513234FB05B000FAA34 /* CarSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830000A23481E8A00D00CF1 /* CarSettingsViewController.swift */; };
+		280F928B2350A3E600EAD6A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F928A2350A3E600EAD6A3 /* MainViewController.swift */; };
+		280F92902350A47500EAD6A3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F928F2350A47500EAD6A3 /* CustomButton.swift */; };
+		280F92922350A4A900EAD6A3 /* CarSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92912350A4A900EAD6A3 /* CarSelectViewController.swift */; };
+		280F92942350A5A400EAD6A3 /* CarSelectTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92932350A5A400EAD6A3 /* CarSelectTableCell.swift */; };
+		280F92962350A61E00EAD6A3 /* EditCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92952350A61E00EAD6A3 /* EditCarViewController.swift */; };
+		280F92992350A74100EAD6A3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92982350A74100EAD6A3 /* CoreDataStack.swift */; };
+		280F929C2350A76A00EAD6A3 /* GasculatorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 280F929A2350A76A00EAD6A3 /* GasculatorModel.xcdatamodeld */; };
+		280F929F2350AD1600EAD6A3 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F929E2350AD1600EAD6A3 /* Car+CoreDataClass.swift */; };
+		280F92A12350AD3E00EAD6A3 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92A02350AD3E00EAD6A3 /* Car+CoreDataProperties.swift */; };
+		280F92A62350ADCF00EAD6A3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92A52350ADCF00EAD6A3 /* DataManager.swift */; };
+		280F92A92350AE3B00EAD6A3 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92A82350AE3B00EAD6A3 /* CurveAlgorithm.swift */; };
+		280F92AB2350AE4E00EAD6A3 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92AA2350AE4E00EAD6A3 /* LineChart.swift */; };
+		280F92AD2350AE6F00EAD6A3 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92AC2350AE6E00EAD6A3 /* DotCALayer.swift */; };
+		280F92B02350AEBD00EAD6A3 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92AF2350AEBD00EAD6A3 /* Route.swift */; };
+		280F92B32350B09A00EAD6A3 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92B22350B09A00EAD6A3 /* SummaryViewController.swift */; };
 		BE91D514234FB05B000FAA34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */; };
 		BE91D515234FB05B000FAA34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF12344B0B700B9E138 /* SceneDelegate.swift */; };
 		BE91D516234FB05B000FAA34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF32344B0B700B9E138 /* ViewController.swift */; };
-		BE91D531234FB11C000FAA34 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE91D52E234FB11C000FAA34 /* LineChart.swift */; };
-		BE91D532234FB11C000FAA34 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE91D52F234FB11C000FAA34 /* DotCALayer.swift */; };
-		BE91D533234FB11C000FAA34 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE91D530234FB11C000FAA34 /* CurveAlgorithm.swift */; };
-		BE91D536234FB12C000FAA34 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE91D535234FB12C000FAA34 /* Car.swift */; };
-		BE91D539234FB24A000FAA34 /* GasculatorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28EABF532348A4710083F736 /* GasculatorModel.xcdatamodeld */; };
-		BE91D53F234FB2D4000FAA34 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE91D53D234FB2D4000FAA34 /* Car+CoreDataClass.swift */; };
-		BE91D540234FB2D4000FAA34 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE91D53E234FB2D4000FAA34 /* Car+CoreDataProperties.swift */; };
-		BE91D544234FB766000FAA34 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE91D543234FB766000FAA34 /* Route.swift */; };
 		E5BA26237FE9E481C8223ED0 /* Pods_Gasculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,29 +40,23 @@
 		1AC78AFB2344B0B900B9E138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AC78AFE2344B0B900B9E138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AC78B002344B0B900B9E138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2830000223481E8A00D00CF1 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
-		2830000323481E8A00D00CF1 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
-		2830000423481E8A00D00CF1 /* DotCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
-		2830000A23481E8A00D00CF1 /* CarSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSettingsViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
-		2830FFD32347801C00D00CF1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
-		2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableViewCell.swift; sourceTree = "<group>"; };
-		2830FFFC234807ED00D00CF1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; wrapsLines = 0; };
-		2849C7562346755B00C0FC77 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		28C04D2923469DA5000AA6C3 /* TripDestinationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDestinationsTableViewCell.swift; sourceTree = "<group>"; };
-		28C04D2B2346B104000AA6C3 /* LocationSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectView.swift; sourceTree = "<group>"; };
-		28EABF542348A4710083F736 /* GasculatorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GasculatorModel.xcdatamodel; sourceTree = "<group>"; };
-		28EABF562348A8E90083F736 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		280F928A2350A3E600EAD6A3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		280F928F2350A47500EAD6A3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		280F92912350A4A900EAD6A3 /* CarSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectViewController.swift; sourceTree = "<group>"; };
+		280F92932350A5A400EAD6A3 /* CarSelectTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableCell.swift; sourceTree = "<group>"; };
+		280F92952350A61E00EAD6A3 /* EditCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarViewController.swift; sourceTree = "<group>"; };
+		280F92982350A74100EAD6A3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		280F929B2350A76A00EAD6A3 /* GasculatorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GasculatorModel.xcdatamodel; sourceTree = "<group>"; };
+		280F929E2350AD1600EAD6A3 /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
+		280F92A02350AD3E00EAD6A3 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		280F92A52350ADCF00EAD6A3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		280F92A82350AE3B00EAD6A3 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
+		280F92AA2350AE4E00EAD6A3 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		280F92AC2350AE6E00EAD6A3 /* DotCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
+		280F92AF2350AEBD00EAD6A3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		280F92B22350B09A00EAD6A3 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		2C9FE7508667C5C3F23D88A2 /* Pods-Gasculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.release.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.release.xcconfig"; sourceTree = "<group>"; };
 		9D26F1E24C7105A5BFB5CC90 /* Pods-Gasculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.debug.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.debug.xcconfig"; sourceTree = "<group>"; };
-		BE91D52E234FB11C000FAA34 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LineChart.swift; path = Gasculator/Chart/LineChart.swift; sourceTree = "<group>"; };
-		BE91D52F234FB11C000FAA34 /* DotCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DotCALayer.swift; path = Gasculator/Chart/DotCALayer.swift; sourceTree = "<group>"; };
-		BE91D530234FB11C000FAA34 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurveAlgorithm.swift; path = Gasculator/Chart/CurveAlgorithm.swift; sourceTree = "<group>"; };
-		BE91D534234FB12C000FAA34 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = Gasculator/Persistence/CoreDataStack.swift; sourceTree = "<group>"; };
-		BE91D535234FB12C000FAA34 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Car.swift; path = Gasculator/Persistence/Car.swift; sourceTree = "<group>"; };
-		BE91D53D234FB2D4000FAA34 /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Car+CoreDataClass.swift"; path = "Gasculator/Car+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		BE91D53E234FB2D4000FAA34 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Car+CoreDataProperties.swift"; path = "Gasculator/Car+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		BE91D543234FB766000FAA34 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gasculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,11 +75,6 @@
 		1AC78AE32344B0B700B9E138 = {
 			isa = PBXGroup;
 			children = (
-				BE91D535234FB12C000FAA34 /* Car.swift */,
-				BE91D534234FB12C000FAA34 /* CoreDataStack.swift */,
-				BE91D530234FB11C000FAA34 /* CurveAlgorithm.swift */,
-				BE91D52F234FB11C000FAA34 /* DotCALayer.swift */,
-				BE91D52E234FB11C000FAA34 /* LineChart.swift */,
 				1AC78AEE2344B0B700B9E138 /* Gasculator */,
 				1AC78AED2344B0B700B9E138 /* Products */,
 				96DC970F282C62FE8FA5C4EA /* Pods */,
@@ -106,11 +93,9 @@
 		1AC78AEE2344B0B700B9E138 /* Gasculator */ = {
 			isa = PBXGroup;
 			children = (
-				BE91D542234FB757000FAA34 /* GoogleMapsRoute */,
-				280F9287234E3FA900EAD6A3 /* Data Manager */,
-				2830000523481E8A00D00CF1 /* Chart */,
-				2830FFF9234806F000D00CF1 /* Persistence */,
-				2849C7532346723200C0FC77 /* UI */,
+				280F92A42350ADC200EAD6A3 /* Data */,
+				280F92972350A70E00EAD6A3 /* Persistence */,
+				280F92882350A2F400EAD6A3 /* UI */,
 				1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */,
 				1AC78AF12344B0B700B9E138 /* SceneDelegate.swift */,
 				1AC78AF32344B0B700B9E138 /* ViewController.swift */,
@@ -122,80 +107,104 @@
 			path = Gasculator;
 			sourceTree = "<group>";
 		};
-		280F9287234E3FA900EAD6A3 /* Data Manager */ = {
+		280F92882350A2F400EAD6A3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2830FFFC234807ED00D00CF1 /* DataManager.swift */,
-			);
-			path = "Data Manager";
-			sourceTree = "<group>";
-		};
-		2830000523481E8A00D00CF1 /* Chart */ = {
-			isa = PBXGroup;
-			children = (
-				2830000223481E8A00D00CF1 /* CurveAlgorithm.swift */,
-				2830000323481E8A00D00CF1 /* LineChart.swift */,
-				2830000423481E8A00D00CF1 /* DotCALayer.swift */,
-			);
-			name = Chart;
-			path = /Users/adriyanbevz/Documents/iOS/IOS_Course/Gasculator/Gasculator/Chart;
-			sourceTree = "<absolute>";
-		};
-		2830FFD223477EAC00D00CF1 /* UI Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				2830FFD32347801C00D00CF1 /* CustomButton.swift */,
-			);
-			path = "UI Extensions";
-			sourceTree = "<group>";
-		};
-		2830FFD52347A66400D00CF1 /* Car Select */ = {
-			isa = PBXGroup;
-			children = (
-				2830FFD62347A6AE00D00CF1 /* CarSelectTableViewController.swift */,
-				2830FFD82347A86400D00CF1 /* CarSelectTableViewCell.swift */,
-			);
-			path = "Car Select";
-			sourceTree = "<group>";
-		};
-		2830FFF9234806F000D00CF1 /* Persistence */ = {
-			isa = PBXGroup;
-			children = (
-				BE91D53D234FB2D4000FAA34 /* Car+CoreDataClass.swift */,
-				BE91D53E234FB2D4000FAA34 /* Car+CoreDataProperties.swift */,
-				28EABF532348A4710083F736 /* GasculatorModel.xcdatamodeld */,
-				28EABF562348A8E90083F736 /* CoreDataStack.swift */,
-			);
-			path = Persistence;
-			sourceTree = "<group>";
-		};
-		2849C7532346723200C0FC77 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				2830FFD223477EAC00D00CF1 /* UI Extensions */,
-				28C04D2823469D3A000AA6C3 /* Main View */,
-				2830FFD52347A66400D00CF1 /* Car Select */,
-				28D53C6C2348203C00F20302 /* Car Settings */,
+				280F928E2350A45D00EAD6A3 /* Extensions */,
+				280F92892350A30000EAD6A3 /* Main View */,
+				280F928C2350A43B00EAD6A3 /* Car Select View */,
+				280F928D2350A44300EAD6A3 /* Edit Car View */,
+				280F92B12350B06500EAD6A3 /* Summary View */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		28C04D2823469D3A000AA6C3 /* Main View */ = {
+		280F92892350A30000EAD6A3 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
-				2849C7562346755B00C0FC77 /* MainViewController.swift */,
-				28C04D2923469DA5000AA6C3 /* TripDestinationsTableViewCell.swift */,
-				28C04D2B2346B104000AA6C3 /* LocationSelectView.swift */,
+				280F92AE2350AEB100EAD6A3 /* Google Maps */,
+				280F928A2350A3E600EAD6A3 /* MainViewController.swift */,
 			);
 			path = "Main View";
 			sourceTree = "<group>";
 		};
-		28D53C6C2348203C00F20302 /* Car Settings */ = {
+		280F928C2350A43B00EAD6A3 /* Car Select View */ = {
 			isa = PBXGroup;
 			children = (
-				2830000A23481E8A00D00CF1 /* CarSettingsViewController.swift */,
+				280F92912350A4A900EAD6A3 /* CarSelectViewController.swift */,
+				280F92932350A5A400EAD6A3 /* CarSelectTableCell.swift */,
 			);
-			path = "Car Settings";
+			path = "Car Select View";
+			sourceTree = "<group>";
+		};
+		280F928D2350A44300EAD6A3 /* Edit Car View */ = {
+			isa = PBXGroup;
+			children = (
+				280F92A72350ADF500EAD6A3 /* Chart */,
+				280F92952350A61E00EAD6A3 /* EditCarViewController.swift */,
+			);
+			path = "Edit Car View";
+			sourceTree = "<group>";
+		};
+		280F928E2350A45D00EAD6A3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				280F928F2350A47500EAD6A3 /* CustomButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		280F92972350A70E00EAD6A3 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				280F929D2350A94B00EAD6A3 /* Car */,
+				280F92982350A74100EAD6A3 /* CoreDataStack.swift */,
+				280F929A2350A76A00EAD6A3 /* GasculatorModel.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		280F929D2350A94B00EAD6A3 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				280F929E2350AD1600EAD6A3 /* Car+CoreDataClass.swift */,
+				280F92A02350AD3E00EAD6A3 /* Car+CoreDataProperties.swift */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		280F92A42350ADC200EAD6A3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				280F92A52350ADCF00EAD6A3 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		280F92A72350ADF500EAD6A3 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				280F92A82350AE3B00EAD6A3 /* CurveAlgorithm.swift */,
+				280F92AA2350AE4E00EAD6A3 /* LineChart.swift */,
+				280F92AC2350AE6E00EAD6A3 /* DotCALayer.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		280F92AE2350AEB100EAD6A3 /* Google Maps */ = {
+			isa = PBXGroup;
+			children = (
+				280F92AF2350AEBD00EAD6A3 /* Route.swift */,
+			);
+			path = "Google Maps";
+			sourceTree = "<group>";
+		};
+		280F92B12350B06500EAD6A3 /* Summary View */ = {
+			isa = PBXGroup;
+			children = (
+				280F92B22350B09A00EAD6A3 /* SummaryViewController.swift */,
+			);
+			path = "Summary View";
 			sourceTree = "<group>";
 		};
 		464C1BC48B6AF6D148FB9FEB /* Frameworks */ = {
@@ -213,14 +222,6 @@
 				2C9FE7508667C5C3F23D88A2 /* Pods-Gasculator.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		BE91D542234FB757000FAA34 /* GoogleMapsRoute */ = {
-			isa = PBXGroup;
-			children = (
-				BE91D543234FB766000FAA34 /* Route.swift */,
-			);
-			path = GoogleMapsRoute;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,26 +357,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE91D540234FB2D4000FAA34 /* Car+CoreDataProperties.swift in Sources */,
-				BE91D50C234FB05B000FAA34 /* CoreDataStack.swift in Sources */,
-				BE91D536234FB12C000FAA34 /* Car.swift in Sources */,
-				BE91D531234FB11C000FAA34 /* LineChart.swift in Sources */,
-				BE91D532234FB11C000FAA34 /* DotCALayer.swift in Sources */,
-				BE91D533234FB11C000FAA34 /* CurveAlgorithm.swift in Sources */,
-				BE91D505234FB05B000FAA34 /* DataManager.swift in Sources */,
-				BE91D50D234FB05B000FAA34 /* CustomButton.swift in Sources */,
-				BE91D50E234FB05B000FAA34 /* MainViewController.swift in Sources */,
-				BE91D50F234FB05B000FAA34 /* TripDestinationsTableViewCell.swift in Sources */,
-				BE91D510234FB05B000FAA34 /* LocationSelectView.swift in Sources */,
-				BE91D511234FB05B000FAA34 /* CarSelectTableViewController.swift in Sources */,
-				BE91D512234FB05B000FAA34 /* CarSelectTableViewCell.swift in Sources */,
-				BE91D544234FB766000FAA34 /* Route.swift in Sources */,
-				BE91D513234FB05B000FAA34 /* CarSettingsViewController.swift in Sources */,
+				280F929C2350A76A00EAD6A3 /* GasculatorModel.xcdatamodeld in Sources */,
 				BE91D514234FB05B000FAA34 /* AppDelegate.swift in Sources */,
+				280F92962350A61E00EAD6A3 /* EditCarViewController.swift in Sources */,
+				280F92AD2350AE6F00EAD6A3 /* DotCALayer.swift in Sources */,
 				BE91D515234FB05B000FAA34 /* SceneDelegate.swift in Sources */,
-				BE91D53F234FB2D4000FAA34 /* Car+CoreDataClass.swift in Sources */,
+				280F92A12350AD3E00EAD6A3 /* Car+CoreDataProperties.swift in Sources */,
+				280F92A92350AE3B00EAD6A3 /* CurveAlgorithm.swift in Sources */,
+				280F92992350A74100EAD6A3 /* CoreDataStack.swift in Sources */,
+				280F92942350A5A400EAD6A3 /* CarSelectTableCell.swift in Sources */,
+				280F92B02350AEBD00EAD6A3 /* Route.swift in Sources */,
+				280F929F2350AD1600EAD6A3 /* Car+CoreDataClass.swift in Sources */,
 				BE91D516234FB05B000FAA34 /* ViewController.swift in Sources */,
-				BE91D539234FB24A000FAA34 /* GasculatorModel.xcdatamodeld in Sources */,
+				280F928B2350A3E600EAD6A3 /* MainViewController.swift in Sources */,
+				280F92902350A47500EAD6A3 /* CustomButton.swift in Sources */,
+				280F92A62350ADCF00EAD6A3 /* DataManager.swift in Sources */,
+				280F92922350A4A900EAD6A3 /* CarSelectViewController.swift in Sources */,
+				280F92AB2350AE4E00EAD6A3 /* LineChart.swift in Sources */,
+				280F92B32350B09A00EAD6A3 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,12 +574,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		28EABF532348A4710083F736 /* GasculatorModel.xcdatamodeld */ = {
+		280F929A2350A76A00EAD6A3 /* GasculatorModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				28EABF542348A4710083F736 /* GasculatorModel.xcdatamodel */,
+				280F929B2350A76A00EAD6A3 /* GasculatorModel.xcdatamodel */,
 			);
-			currentVersion = 28EABF542348A4710083F736 /* GasculatorModel.xcdatamodel */;
+			currentVersion = 280F929B2350A76A00EAD6A3 /* GasculatorModel.xcdatamodel */;
 			path = GasculatorModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

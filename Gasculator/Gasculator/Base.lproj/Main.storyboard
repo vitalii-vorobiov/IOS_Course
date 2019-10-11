@@ -20,7 +20,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKV-oz-CFC" userLabel="Separator">
                                         <rect key="frame" x="0.0" y="67" width="414" height="1"/>
-                                        <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="ykM-Br-OqK"/>
                                         </constraints>
@@ -49,7 +49,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwf-fq-5au" userLabel="Finish Button" customClass="CustomButton" customModule="Gasculator" customModuleProvider="target">
                                         <rect key="frame" x="16" y="239" width="382" height="57"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="57" id="KnB-qG-TH4"/>
                                         </constraints>
@@ -83,7 +83,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Vwf-fq-5au" firstAttribute="leading" secondItem="QPo-Ic-O6u" secondAttribute="leading" constant="16" id="13Q-qe-Y4q"/>
                                     <constraint firstAttribute="trailing" secondItem="A3I-df-e7E" secondAttribute="trailing" constant="16" id="8QS-Gh-ODk"/>
@@ -112,7 +112,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v38-La-qIW" userLabel="Map SubView" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="560"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -142,17 +142,17 @@
         <!--Select Car-->
         <scene sceneID="fHI-MR-Ybd">
             <objects>
-                <tableViewController id="r7e-m7-MFu" customClass="CarSelectTableViewController" customModule="Gasculator" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="r7e-m7-MFu" customClass="CarSelectViewController" customModule="Gasculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BHo-Db-arZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarSelectTableViewCell" id="YsM-Tx-MK3" customClass="CarSelectTableViewCell" customModule="Gasculator" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="76.666664123535156"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarSelectTableViewCell" id="YsM-Tx-MK3" customClass="CarSelectTableCell" customModule="Gasculator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="76.333335876464844"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YsM-Tx-MK3" id="lm5-Mw-3ew">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="76.666664123535156"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="76.333335876464844"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Car Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulu-20-HuY" userLabel="Name Label">
@@ -162,7 +162,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make and Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cS6-JM-B9k" userLabel="MakeModel Label">
-                                            <rect key="frame" x="20" y="42.666666666666664" width="133.66666666666666" height="22.999999999999993"/>
+                                            <rect key="frame" x="20" y="42.666666666666664" width="133.66666666666666" height="22.666666666666664"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -203,7 +203,7 @@
                     <navigationItem key="navigationItem" title="Select Car" id="kgj-m9-I2s">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="9KJ-mi-ayt">
                             <connections>
-                                <action selector="addNewCarClicked:" destination="r7e-m7-MFu" id="DYT-Gm-gFD"/>
+                                <action selector="addNewCarClicked:" destination="r7e-m7-MFu" id="VS2-nX-mcN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -216,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="-25" y="67"/>
         </scene>
-        <!--View Controller-->
+        <!--Summary-->
         <scene sceneID="1kv-xY-Se9">
             <objects>
-                <viewController id="Fgq-du-2UA" sceneMemberID="viewController">
+                <viewController id="Fgq-du-2UA" userLabel="Summary" customClass="SummaryViewController" customModule="Gasculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K1M-ro-s9y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,7 +255,7 @@
         <!--Car Settings-->
         <scene sceneID="pon-EO-5L0">
             <objects>
-                <viewController id="fmo-cu-RzH" customClass="CarSettingsViewController" customModule="Gasculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fmo-cu-RzH" customClass="EditCarViewController" customModule="Gasculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyA-kY-4vx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -389,7 +389,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Delete">
-                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -401,7 +401,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bEU-jX-5vd" firstAttribute="leading" secondItem="UMp-KF-nJ6" secondAttribute="leading" constant="20" id="1Ao-rW-MUp"/>
                             <constraint firstItem="QWM-Xc-W1c" firstAttribute="leading" secondItem="UMp-KF-nJ6" secondAttribute="leading" constant="20" id="1nh-XQ-dZx"/>

@@ -5,12 +5,8 @@
 //  Created by Michel Anderson Lutz Teixeira on 04/09/2018.
 //  Copyright © 2018 Nguyen Vu Nhat Minh. All rights reserved.
 //
-
 import UIKit
 
-/**
- * DotCALayer
- */
 class DotCALayer: CALayer {
 
     var innerRadius: CGFloat = 8

@@ -10,10 +10,19 @@ import Foundation
 import UIKit
 
 
+class CarSelectViewController: UITableViewController {
+    // MARK: Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 
-class CarSelectTableViewController: UITableViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+        
+        super.viewWillAppear(animated)
+    }
     
-//    @IBOutlet weak var carSettingsViewController: CarSettingsViewController!
+    // MARK: Actions
     
     @IBAction public func addNewCarClicked(_ sender: UIButton) {
         let car = CoreDataStack.shared.newCar();
@@ -21,18 +30,7 @@ class CarSelectTableViewController: UITableViewController {
         self.performSegue(withIdentifier: "GoToCarSettings", sender: self)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
-        
-        super.viewWillAppear(animated)
-    }
-
+    // MARK: TableView
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -42,9 +40,8 @@ class CarSelectTableViewController: UITableViewController {
         return CoreDataStack.shared.getCars().count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CarSelectTableViewCell", for: indexPath) as! CarSelectTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CarSelectTableCell", for: indexPath) as! CarSelectTableCell
         cell.delegate = self
         let car = CoreDataStack.shared.getCars()[indexPath.row]
         cell.carNameLabel.text = car.name == "" ? "No name" : car.name
@@ -61,20 +58,21 @@ class CarSelectTableViewController: UITableViewController {
         self.performSegue(withIdentifier: "GoToCarSettings", sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        print(segue.identifier)
-        //        switch segue.identifier {
+//        switch segue.identifier {
 //        case "a":
 //
 //        default:
-//            <#code#>
+//
 //        }
-    }
+//    }
 
 }
 
+// MARK: Extensions
 
-extension CarSelectTableViewController: SettingsButtonDelegate {
+extension CarSelectViewController: SettingsButtonDelegate {
     func settingsButtonClicked(with car: Car?) {
         DataManager.shared.selectedCar = car
         self.performSegue(withIdentifier: "GoToCarSettings", sender: self)
