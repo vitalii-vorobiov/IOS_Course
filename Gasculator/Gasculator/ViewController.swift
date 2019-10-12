@@ -14,13 +14,5 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    @IBAction func onSearchOrigin(_ sender: Any) {
-        performSegue(withIdentifier: "InitialSegue", sender: self)
-    }
-    
-    @IBAction func onSearchDestination(_ sender: Any) {
-        performSegue(withIdentifier: "InitialSegue", sender: self)
-    }
 }
 

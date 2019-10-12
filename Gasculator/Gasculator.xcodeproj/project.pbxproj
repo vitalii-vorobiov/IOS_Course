@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AC78AF02344B0B700B9E138 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */; };
-		1AC78AF22344B0B700B9E138 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF12344B0B700B9E138 /* SceneDelegate.swift */; };
-		1AC78AF42344B0B800B9E138 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF32344B0B700B9E138 /* ViewController.swift */; };
 		1AC78AF72344B0B800B9E138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AF52344B0B800B9E138 /* Main.storyboard */; };
-		1AC78AFA2344B0B800B9E138 /* Gasculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF82344B0B800B9E138 /* Gasculator.xcdatamodeld */; };
 		1AC78AFC2344B0B900B9E138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AFB2344B0B900B9E138 /* Assets.xcassets */; };
 		1AC78AFF2344B0B900B9E138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC78AFD2344B0B900B9E138 /* LaunchScreen.storyboard */; };
+		280F928B2350A3E600EAD6A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F928A2350A3E600EAD6A3 /* MainViewController.swift */; };
+		280F92902350A47500EAD6A3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F928F2350A47500EAD6A3 /* CustomButton.swift */; };
+		280F92922350A4A900EAD6A3 /* CarSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92912350A4A900EAD6A3 /* CarSelectViewController.swift */; };
+		280F92942350A5A400EAD6A3 /* CarSelectTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92932350A5A400EAD6A3 /* CarSelectTableCell.swift */; };
+		280F92962350A61E00EAD6A3 /* EditCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92952350A61E00EAD6A3 /* EditCarViewController.swift */; };
+		280F92992350A74100EAD6A3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92982350A74100EAD6A3 /* CoreDataStack.swift */; };
+		280F929C2350A76A00EAD6A3 /* GasculatorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 280F929A2350A76A00EAD6A3 /* GasculatorModel.xcdatamodeld */; };
+		280F929F2350AD1600EAD6A3 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F929E2350AD1600EAD6A3 /* Car+CoreDataClass.swift */; };
+		280F92A12350AD3E00EAD6A3 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92A02350AD3E00EAD6A3 /* Car+CoreDataProperties.swift */; };
+		280F92A62350ADCF00EAD6A3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92A52350ADCF00EAD6A3 /* DataManager.swift */; };
+		280F92A92350AE3B00EAD6A3 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92A82350AE3B00EAD6A3 /* CurveAlgorithm.swift */; };
+		280F92AB2350AE4E00EAD6A3 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92AA2350AE4E00EAD6A3 /* LineChart.swift */; };
+		280F92AD2350AE6F00EAD6A3 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92AC2350AE6E00EAD6A3 /* DotCALayer.swift */; };
+		280F92B02350AEBD00EAD6A3 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92AF2350AEBD00EAD6A3 /* Route.swift */; };
+		280F92B32350B09A00EAD6A3 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92B22350B09A00EAD6A3 /* SummaryViewController.swift */; };
+		280F92B62351BE5B00EAD6A3 /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92B52351BE5B00EAD6A3 /* GasStation.swift */; };
+		280F92B82351BF2D00EAD6A3 /* GasLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92B72351BF2D00EAD6A3 /* GasLoader.swift */; };
+		280F92BA2351BF4800EAD6A3 /* GasStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92B92351BF4800EAD6A3 /* GasStorage.swift */; };
+		280F92BD2351BFD700EAD6A3 /* GasSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92BC2351BFD700EAD6A3 /* GasSelectViewController.swift */; };
+		280F92BF2351BFF700EAD6A3 /* GasSelectTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F92BE2351BFF700EAD6A3 /* GasSelectTableCell.swift */; };
+		BE91D514234FB05B000FAA34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */; };
+		BE91D515234FB05B000FAA34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF12344B0B700B9E138 /* SceneDelegate.swift */; };
+		BE91D516234FB05B000FAA34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78AF32344B0B700B9E138 /* ViewController.swift */; };
 		E5BA26237FE9E481C8223ED0 /* Pods_Gasculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,10 +42,29 @@
 		1AC78AF12344B0B700B9E138 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1AC78AF32344B0B700B9E138 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1AC78AF62344B0B800B9E138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1AC78AF92344B0B800B9E138 /* Gasculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gasculator.xcdatamodel; sourceTree = "<group>"; };
 		1AC78AFB2344B0B900B9E138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AC78AFE2344B0B900B9E138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AC78B002344B0B900B9E138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280F928A2350A3E600EAD6A3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		280F928F2350A47500EAD6A3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		280F92912350A4A900EAD6A3 /* CarSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		280F92932350A5A400EAD6A3 /* CarSelectTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableCell.swift; sourceTree = "<group>"; };
+		280F92952350A61E00EAD6A3 /* EditCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		280F92982350A74100EAD6A3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		280F929B2350A76A00EAD6A3 /* GasculatorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GasculatorModel.xcdatamodel; sourceTree = "<group>"; };
+		280F929E2350AD1600EAD6A3 /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
+		280F92A02350AD3E00EAD6A3 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		280F92A52350ADCF00EAD6A3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		280F92A82350AE3B00EAD6A3 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
+		280F92AA2350AE4E00EAD6A3 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		280F92AC2350AE6E00EAD6A3 /* DotCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
+		280F92AF2350AEBD00EAD6A3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		280F92B22350B09A00EAD6A3 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		280F92B52351BE5B00EAD6A3 /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
+		280F92B72351BF2D00EAD6A3 /* GasLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasLoader.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		280F92B92351BF4800EAD6A3 /* GasStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStorage.swift; sourceTree = "<group>"; };
+		280F92BC2351BFD700EAD6A3 /* GasSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasSelectViewController.swift; sourceTree = "<group>"; };
+		280F92BE2351BFF700EAD6A3 /* GasSelectTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasSelectTableCell.swift; sourceTree = "<group>"; };
 		2C9FE7508667C5C3F23D88A2 /* Pods-Gasculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.release.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.release.xcconfig"; sourceTree = "<group>"; };
 		9D26F1E24C7105A5BFB5CC90 /* Pods-Gasculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasculator.debug.xcconfig"; path = "Target Support Files/Pods-Gasculator/Pods-Gasculator.debug.xcconfig"; sourceTree = "<group>"; };
 		D230D7FE3A28D63A6E353932 /* Pods_Gasculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gasculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +103,9 @@
 		1AC78AEE2344B0B700B9E138 /* Gasculator */ = {
 			isa = PBXGroup;
 			children = (
+				280F92A42350ADC200EAD6A3 /* Data */,
+				280F92972350A70E00EAD6A3 /* Persistence */,
+				280F92882350A2F400EAD6A3 /* UI */,
 				1AC78AEF2344B0B700B9E138 /* AppDelegate.swift */,
 				1AC78AF12344B0B700B9E138 /* SceneDelegate.swift */,
 				1AC78AF32344B0B700B9E138 /* ViewController.swift */,
@@ -72,9 +113,129 @@
 				1AC78AFB2344B0B900B9E138 /* Assets.xcassets */,
 				1AC78AFD2344B0B900B9E138 /* LaunchScreen.storyboard */,
 				1AC78B002344B0B900B9E138 /* Info.plist */,
-				1AC78AF82344B0B800B9E138 /* Gasculator.xcdatamodeld */,
 			);
 			path = Gasculator;
+			sourceTree = "<group>";
+		};
+		280F92882350A2F400EAD6A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				280F928E2350A45D00EAD6A3 /* Extensions */,
+				280F92892350A30000EAD6A3 /* Main View */,
+				280F928C2350A43B00EAD6A3 /* Car Select View */,
+				280F928D2350A44300EAD6A3 /* Edit Car View */,
+				280F92B42351BE3C00EAD6A3 /* Gas Select View */,
+				280F92B12350B06500EAD6A3 /* Summary View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		280F92892350A30000EAD6A3 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				280F92AE2350AEB100EAD6A3 /* Google Maps */,
+				280F928A2350A3E600EAD6A3 /* MainViewController.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		280F928C2350A43B00EAD6A3 /* Car Select View */ = {
+			isa = PBXGroup;
+			children = (
+				280F92912350A4A900EAD6A3 /* CarSelectViewController.swift */,
+				280F92932350A5A400EAD6A3 /* CarSelectTableCell.swift */,
+			);
+			path = "Car Select View";
+			sourceTree = "<group>";
+		};
+		280F928D2350A44300EAD6A3 /* Edit Car View */ = {
+			isa = PBXGroup;
+			children = (
+				280F92A72350ADF500EAD6A3 /* Chart */,
+				280F92952350A61E00EAD6A3 /* EditCarViewController.swift */,
+			);
+			path = "Edit Car View";
+			sourceTree = "<group>";
+		};
+		280F928E2350A45D00EAD6A3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				280F928F2350A47500EAD6A3 /* CustomButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		280F92972350A70E00EAD6A3 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				280F929D2350A94B00EAD6A3 /* Car */,
+				280F92982350A74100EAD6A3 /* CoreDataStack.swift */,
+				280F929A2350A76A00EAD6A3 /* GasculatorModel.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		280F929D2350A94B00EAD6A3 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				280F929E2350AD1600EAD6A3 /* Car+CoreDataClass.swift */,
+				280F92A02350AD3E00EAD6A3 /* Car+CoreDataProperties.swift */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		280F92A42350ADC200EAD6A3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				280F92BB2351BF6200EAD6A3 /* Gas */,
+				280F92A52350ADCF00EAD6A3 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		280F92A72350ADF500EAD6A3 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				280F92A82350AE3B00EAD6A3 /* CurveAlgorithm.swift */,
+				280F92AA2350AE4E00EAD6A3 /* LineChart.swift */,
+				280F92AC2350AE6E00EAD6A3 /* DotCALayer.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		280F92AE2350AEB100EAD6A3 /* Google Maps */ = {
+			isa = PBXGroup;
+			children = (
+				280F92AF2350AEBD00EAD6A3 /* Route.swift */,
+			);
+			path = "Google Maps";
+			sourceTree = "<group>";
+		};
+		280F92B12350B06500EAD6A3 /* Summary View */ = {
+			isa = PBXGroup;
+			children = (
+				280F92B22350B09A00EAD6A3 /* SummaryViewController.swift */,
+			);
+			path = "Summary View";
+			sourceTree = "<group>";
+		};
+		280F92B42351BE3C00EAD6A3 /* Gas Select View */ = {
+			isa = PBXGroup;
+			children = (
+				280F92BC2351BFD700EAD6A3 /* GasSelectViewController.swift */,
+				280F92BE2351BFF700EAD6A3 /* GasSelectTableCell.swift */,
+			);
+			path = "Gas Select View";
+			sourceTree = "<group>";
+		};
+		280F92BB2351BF6200EAD6A3 /* Gas */ = {
+			isa = PBXGroup;
+			children = (
+				280F92B52351BE5B00EAD6A3 /* GasStation.swift */,
+				280F92B72351BF2D00EAD6A3 /* GasLoader.swift */,
+				280F92B92351BF4800EAD6A3 /* GasStorage.swift */,
+			);
+			path = Gas;
 			sourceTree = "<group>";
 		};
 		464C1BC48B6AF6D148FB9FEB /* Frameworks */ = {
@@ -106,6 +267,7 @@
 				1AC78AE92344B0B700B9E138 /* Frameworks */,
 				1AC78AEA2344B0B700B9E138 /* Resources */,
 				124BCAE1F5A470548E0D6F56 /* [CP] Copy Pods Resources */,
+				37745F3B4246E82943CB60FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +342,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		37745F3B4246E82943CB60FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gasculator/Pods-Gasculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7118CF5A075CAD23314A566B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,10 +388,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC78AFA2344B0B800B9E138 /* Gasculator.xcdatamodeld in Sources */,
-				1AC78AF42344B0B800B9E138 /* ViewController.swift in Sources */,
-				1AC78AF02344B0B700B9E138 /* AppDelegate.swift in Sources */,
-				1AC78AF22344B0B700B9E138 /* SceneDelegate.swift in Sources */,
+				280F92B82351BF2D00EAD6A3 /* GasLoader.swift in Sources */,
+				280F929C2350A76A00EAD6A3 /* GasculatorModel.xcdatamodeld in Sources */,
+				BE91D514234FB05B000FAA34 /* AppDelegate.swift in Sources */,
+				280F92962350A61E00EAD6A3 /* EditCarViewController.swift in Sources */,
+				280F92AD2350AE6F00EAD6A3 /* DotCALayer.swift in Sources */,
+				BE91D515234FB05B000FAA34 /* SceneDelegate.swift in Sources */,
+				280F92BF2351BFF700EAD6A3 /* GasSelectTableCell.swift in Sources */,
+				280F92A12350AD3E00EAD6A3 /* Car+CoreDataProperties.swift in Sources */,
+				280F92BA2351BF4800EAD6A3 /* GasStorage.swift in Sources */,
+				280F92A92350AE3B00EAD6A3 /* CurveAlgorithm.swift in Sources */,
+				280F92992350A74100EAD6A3 /* CoreDataStack.swift in Sources */,
+				280F92942350A5A400EAD6A3 /* CarSelectTableCell.swift in Sources */,
+				280F92B02350AEBD00EAD6A3 /* Route.swift in Sources */,
+				280F929F2350AD1600EAD6A3 /* Car+CoreDataClass.swift in Sources */,
+				BE91D516234FB05B000FAA34 /* ViewController.swift in Sources */,
+				280F928B2350A3E600EAD6A3 /* MainViewController.swift in Sources */,
+				280F92B62351BE5B00EAD6A3 /* GasStation.swift in Sources */,
+				280F92902350A47500EAD6A3 /* CustomButton.swift in Sources */,
+				280F92A62350ADCF00EAD6A3 /* DataManager.swift in Sources */,
+				280F92922350A4A900EAD6A3 /* CarSelectViewController.swift in Sources */,
+				280F92AB2350AE4E00EAD6A3 /* LineChart.swift in Sources */,
+				280F92BD2351BFD700EAD6A3 /* GasSelectViewController.swift in Sources */,
+				280F92B32350B09A00EAD6A3 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,13 +610,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1AC78AF82344B0B800B9E138 /* Gasculator.xcdatamodeld */ = {
+		280F929A2350A76A00EAD6A3 /* GasculatorModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1AC78AF92344B0B800B9E138 /* Gasculator.xcdatamodel */,
+				280F929B2350A76A00EAD6A3 /* GasculatorModel.xcdatamodel */,
 			);
-			currentVersion = 1AC78AF92344B0B800B9E138 /* Gasculator.xcdatamodel */;
-			path = Gasculator.xcdatamodeld;
+			currentVersion = 280F929B2350A76A00EAD6A3 /* GasculatorModel.xcdatamodel */;
+			path = GasculatorModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
