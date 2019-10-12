@@ -23,9 +23,17 @@ class GasSelectViewController: UIViewController, UITableViewDelegate, UITableVie
     @objc func priceFieldChanged(_ textField: UITextField) {
         self.gasPrice = Float(textField.text!) ?? 0.0
     }
-
+    
+    @IBAction func onDoneButton(_ sender: Any) {
+//        DataManager.shared.selectedFuelPrice = self.gasPrice
+        performSegue(withIdentifier: "GoToSummary", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         
         gasPriceField.delegate = self
         gasPriceField.addTarget(self, action: #selector(self.priceFieldChanged(_:)), for: UIControl.Event.editingChanged)
@@ -72,6 +80,7 @@ class GasSelectViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         let numberOfRows = GasStationStorage.shared.gasStations.count
+        print("SLDSKDLAKDLAKDLAKSLA \(numberOfRows)")
         return numberOfRows
     }
 

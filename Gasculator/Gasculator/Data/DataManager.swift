@@ -21,5 +21,5 @@ class DataManager {
     
     var selectedCar: Car!
     
-    var selectedFuelPrice: Float!
+    var selectedFuelPrice: Float! = 0.0
 }
