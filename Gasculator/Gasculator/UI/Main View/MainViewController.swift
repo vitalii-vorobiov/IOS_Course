@@ -152,6 +152,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
             let location = locationManager.location
             if location != nil {
                 originPoint = location?.coordinate
+                DataManager.shared.latitude = originPoint.latitude
+                DataManager.shared.longitude = originPoint.longitude
                 ori = CLLocation(latitude: originPoint.latitude, longitude: originPoint.longitude)
                 SearchOriginTextField.text = "Your Location"
                 drawMarkers()
@@ -231,6 +233,8 @@ extension MainViewController: GMSAutocompleteViewControllerDelegate {
         
         if self.isOrigin == true {
             originPoint = place.coordinate
+            DataManager.shared.latitude = originPoint.latitude
+            DataManager.shared.longitude = originPoint.longitude
             SearchOriginTextField.text = place.name
             drawMarkers()
             ori = CLLocation(latitude: originPoint.latitude, longitude: originPoint.longitude)

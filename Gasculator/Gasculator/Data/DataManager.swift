@@ -15,4 +15,7 @@ class DataManager {
     var selectedCar: Car!
     var tripDuration: Int!
     var tripDistance: Int!
+    
+    var latitude: Double!
+    var longitude: Double!
 }
