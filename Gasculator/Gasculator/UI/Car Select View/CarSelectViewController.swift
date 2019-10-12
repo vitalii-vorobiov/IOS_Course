@@ -60,17 +60,6 @@ class CarSelectViewController: UITableViewController {
         DataManager.shared.selectedCar = CoreDataStack.shared.getCars()[indexPath.row]
         self.performSegue(withIdentifier: "GoToGasSelect", sender: self)
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        print(segue.identifier)
-//        switch segue.identifier {
-//        case "a":
-//
-//        default:
-//
-//        }
-//    }
-
 }
 
 // MARK: Extensions
