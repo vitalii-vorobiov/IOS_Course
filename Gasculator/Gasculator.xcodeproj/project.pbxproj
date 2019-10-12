@@ -59,9 +59,9 @@
 		280F92AA2350AE4E00EAD6A3 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		280F92AC2350AE6E00EAD6A3 /* DotCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
 		280F92AF2350AEBD00EAD6A3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		280F92B22350B09A00EAD6A3 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		280F92B22350B09A00EAD6A3 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		280F92B52351BE5B00EAD6A3 /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
-		280F92B72351BF2D00EAD6A3 /* GasLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasLoader.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		280F92B72351BF2D00EAD6A3 /* GasLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasLoader.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		280F92B92351BF4800EAD6A3 /* GasStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStorage.swift; sourceTree = "<group>"; };
 		280F92BC2351BFD700EAD6A3 /* GasSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasSelectViewController.swift; sourceTree = "<group>"; };
 		280F92BE2351BFF700EAD6A3 /* GasSelectTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasSelectTableCell.swift; sourceTree = "<group>"; };

@@ -58,7 +58,7 @@ class CarSelectViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         DataManager.shared.selectedCar = CoreDataStack.shared.getCars()[indexPath.row]
-        self.performSegue(withIdentifier: "GoToCarSettings", sender: self)
+        self.performSegue(withIdentifier: "GoToGasSelect", sender: self)
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
