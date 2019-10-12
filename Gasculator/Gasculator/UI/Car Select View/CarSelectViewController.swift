@@ -11,7 +11,9 @@ import UIKit
 
 
 class CarSelectViewController: UITableViewController {
+    
     // MARK: Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -47,8 +49,9 @@ class CarSelectViewController: UITableViewController {
         cell.carNameLabel.text = car.name == "" ? "No name" : car.name
         let makeModel = (car.make ?? "Make") + " " + (car.model ?? "Model")
         cell.carMakeAndModelLabel.text = makeModel
-            
+        
         cell.car = car
+        cell.delegate = self
         
         return cell
     }
@@ -73,8 +76,10 @@ class CarSelectViewController: UITableViewController {
 // MARK: Extensions
 
 extension CarSelectViewController: SettingsButtonDelegate {
-    func settingsButtonClicked(with car: Car?) {
-        DataManager.shared.selectedCar = car
+    func settingsButtonClicked(with selectedCell: CarSelectTableCell) {
+        let indexPath = self.tableView.indexPath(for: selectedCell)
+        let selectedCar = CoreDataStack.shared.getCars()[indexPath?.row ?? 0]
+        DataManager.shared.selectedCar = selectedCar
         self.performSegue(withIdentifier: "GoToCarSettings", sender: self)
     }
 }

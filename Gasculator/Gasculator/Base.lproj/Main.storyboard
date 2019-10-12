@@ -175,7 +175,7 @@
                                             </constraints>
                                             <state key="normal" backgroundImage="pencil" catalog="system"/>
                                             <connections>
-                                                <action selector="onSettingsButtonClicked:" destination="YsM-Tx-MK3" eventType="touchUpInside" id="Ayr-B7-d3x"/>
+                                                <action selector="onSettingsButtonClicked:" destination="YsM-Tx-MK3" eventType="touchUpInside" id="zKZ-W7-bYo"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -437,7 +437,7 @@
                     <navigationItem key="navigationItem" title="Car Settings" id="g7i-Bz-ALs">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="ThI-0h-lKV">
                             <connections>
-                                <action selector="donePressedWithSender:" destination="fmo-cu-RzH" id="Qud-3t-9na"/>
+                                <action selector="savePressed" destination="fmo-cu-RzH" id="2Xe-3t-8FV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

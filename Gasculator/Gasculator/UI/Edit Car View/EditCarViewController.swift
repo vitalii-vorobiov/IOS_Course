@@ -11,7 +11,9 @@ import UIKit
 
 class EditCarViewController: UIViewController, UITextFieldDelegate, UIActionSheetDelegate {
     
-    var currentCar: Car!
+    weak var currentCar: Car!
+    
+    // MARK: Outlets
     
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var makeField: UITextField!
@@ -21,6 +23,61 @@ class EditCarViewController: UIViewController, UITextFieldDelegate, UIActionShee
     @IBOutlet weak var consumptionChart: LineChart!
     
     @IBOutlet weak var fuelChoice: UISegmentedControl!
+    
+    // MARK: Lifecycle
+    
+    override func viewDidLoad() {
+        cityConsumptionField.delegate = self
+        highwayConsumptionField.delegate = self
+        
+        self.currentCar = DataManager.shared.selectedCar
+        
+        nameField.text = currentCar.name
+        makeField.text = currentCar.make
+        modelField.text = currentCar.model
+        
+        cityConsumptionField.text = String(currentCar.consumptionCity)
+        highwayConsumptionField.text = String(currentCar.consumptionHighway)
+        
+        switch self.currentCar.fuelType {
+        case .Gas92:
+            self.fuelChoice.selectedSegmentIndex = 0
+        case .Gas95:
+            self.fuelChoice.selectedSegmentIndex = 1
+        case .Diesel:
+            self.fuelChoice.selectedSegmentIndex = 2
+        }
+        
+        self.updateChart()
+       
+        cityConsumptionField.addTarget(self, action: #selector(self.fieldDidChangeCity(_:)), for: UIControl.Event.editingChanged)
+        highwayConsumptionField.addTarget(self, action: #selector(self.fieldDidChangeHighway(_:)), for: UIControl.Event.editingChanged)
+        
+        super.viewDidLoad()
+    }
+    
+    // MARK: Actions
+    
+    @IBAction func savePressed() {
+        self.currentCar.name = nameField.text
+        self.currentCar.make = makeField.text
+        self.currentCar.model = modelField.text
+        self.currentCar.consumptionCity = NumberFormatter().number(from: cityConsumptionField.text ?? "")?.floatValue ?? self.currentCar.consumptionCity
+        self.currentCar.consumptionHighway = NumberFormatter().number(from: highwayConsumptionField.text ?? "")?.floatValue ?? self.currentCar.consumptionHighway
+        switch fuelChoice.selectedSegmentIndex {
+        case 0:
+            self.currentCar.fuelType = .Gas92
+        case 1:
+            self.currentCar.fuelType = .Gas95
+        case 2:
+            self.currentCar.fuelType = .Diesel
+        default:
+            self.currentCar.fuelType = .Gas95
+        }
+        CoreDataStack.shared.saveContext()
+        
+        self.navigationController?.popViewController(animated: true)
+    }
     
     @IBAction func indexChanged(sender : UISegmentedControl) {
         switch sender.selectedSegmentIndex {
@@ -35,16 +92,10 @@ class EditCarViewController: UIViewController, UITextFieldDelegate, UIActionShee
         }
     }
     
-    @IBAction func donePressed(sender: UIBarButtonItem) {
-        CoreDataStack.shared.saveContext()
-        self.navigationController?.popViewController(animated: true)
-//        self.currentCar.verbose()
-    }
-    
     @IBAction func deletePressed(sender: AnyObject)
     {
 
-         let alert = UIAlertController(title: "Delete car", message: "Are you shure to delete this car?", preferredStyle: .actionSheet)
+         let alert = UIAlertController(title: "Delete car", message: "Delete car", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (_) in
             self.performSegue(withIdentifier: "endScreenSegue", sender: self)
@@ -86,15 +137,6 @@ class EditCarViewController: UIViewController, UITextFieldDelegate, UIActionShee
         return false
     }
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.text = ""
-    }
-    
-    
-    func loadCar() {
-        self.currentCar = DataManager.shared.selectedCar
-    }
-    
     func updateChart() {
         consumptionChart.dataEntries = [
             PointEntry(value: Int(self.currentCar.consumptionCity * 1.2), label: ""),
@@ -103,34 +145,4 @@ class EditCarViewController: UIViewController, UITextFieldDelegate, UIActionShee
                 PointEntry(value: Int(self.currentCar.consumptionHighway * 1.2), label: "")
             ]
         }
-    
-    override func viewDidLoad() {
-        cityConsumptionField.delegate = self
-        highwayConsumptionField.delegate = self
-    
-        loadCar()
-        
-        nameField.text = currentCar.name
-        makeField.text = currentCar.make
-        modelField.text = currentCar.model
-        
-        cityConsumptionField.text = String(currentCar.consumptionCity)
-        highwayConsumptionField.text = String(currentCar.consumptionHighway)
-        
-        switch self.currentCar.fuelType {
-        case .Gas92:
-            self.fuelChoice.selectedSegmentIndex = 0
-        case .Gas95:
-            self.fuelChoice.selectedSegmentIndex = 1
-        case .Diesel:
-            self.fuelChoice.selectedSegmentIndex = 2
-        }
-        
-        self.updateChart()
-       
-        cityConsumptionField.addTarget(self, action: #selector(self.fieldDidChangeCity(_:)), for: UIControl.Event.editingChanged)
-        highwayConsumptionField.addTarget(self, action: #selector(self.fieldDidChangeHighway(_:)), for: UIControl.Event.editingChanged)
-        
-        super.viewDidLoad()
-    }
 }

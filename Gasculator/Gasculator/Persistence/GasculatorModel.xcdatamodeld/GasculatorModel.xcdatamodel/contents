@@ -4,9 +4,9 @@
         <attribute name="consumptionCity" optional="YES" attributeType="Float" defaultValueString="15" usesScalarValueType="YES"/>
         <attribute name="consumptionHighway" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="fuelTypeString" optional="YES" attributeType="String" defaultValueString="gas95"/>
-        <attribute name="make" optional="YES" attributeType="String" defaultValueString=""/>
-        <attribute name="model" optional="YES" attributeType="String" defaultValueString=""/>
-        <attribute name="name" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="make" optional="YES" attributeType="String" defaultValueString="Make"/>
+        <attribute name="model" optional="YES" attributeType="String" defaultValueString="Model"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="Car name"/>
     </entity>
     <elements>
         <element name="Car" positionX="-63" positionY="-18" width="128" height="133"/>

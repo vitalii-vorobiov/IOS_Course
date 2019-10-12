@@ -9,11 +9,13 @@
 import UIKit
 
 protocol SettingsButtonDelegate: class {
-    func settingsButtonClicked(with car: Car?)
+    func settingsButtonClicked(with selectedCell: CarSelectTableCell)
 }
 
 class CarSelectTableCell: UITableViewCell {
     weak var delegate: SettingsButtonDelegate?
+    
+    weak var car: Car?
     
     // MARK: Outlets
     
@@ -23,11 +25,6 @@ class CarSelectTableCell: UITableViewCell {
     // MARK: Actions
         
     @IBAction func onSettingsButtonClicked(_ sender: Any) {
-        print(car)
-        delegate?.settingsButtonClicked(with: car)
+        delegate?.settingsButtonClicked(with: self)
     }
-    
-    // MARK: Content
-    
-    weak var car: Car?
 }

@@ -181,10 +181,12 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 if let d = data, d.count > 0 {
                     let route = try? Route.init(from: d)
-                    print(route?.distance)
-                    print(route?.duration)
+//                    print(route?.distance)
+//                    print(route?.duration)
                 }
             }
+            
+            
 
             task.resume()
            }
