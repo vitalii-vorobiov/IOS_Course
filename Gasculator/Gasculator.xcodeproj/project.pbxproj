@@ -45,7 +45,7 @@
 		1AC78AFB2344B0B900B9E138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AC78AFE2344B0B900B9E138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AC78B002344B0B900B9E138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		280F928A2350A3E600EAD6A3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		280F928A2350A3E600EAD6A3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		280F928F2350A47500EAD6A3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		280F92912350A4A900EAD6A3 /* CarSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		280F92932350A5A400EAD6A3 /* CarSelectTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectTableCell.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		280F92AF2350AEBD00EAD6A3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		280F92B22350B09A00EAD6A3 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		280F92B52351BE5B00EAD6A3 /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
-		280F92B72351BF2D00EAD6A3 /* GasLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasLoader.swift; sourceTree = "<group>"; };
+		280F92B72351BF2D00EAD6A3 /* GasLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasLoader.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		280F92B92351BF4800EAD6A3 /* GasStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStorage.swift; sourceTree = "<group>"; };
 		280F92BC2351BFD700EAD6A3 /* GasSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasSelectViewController.swift; sourceTree = "<group>"; };
 		280F92BE2351BFF700EAD6A3 /* GasSelectTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasSelectTableCell.swift; sourceTree = "<group>"; };

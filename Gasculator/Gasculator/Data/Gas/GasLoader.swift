@@ -14,7 +14,7 @@ class GasStationLoader {
     private let decoder = JSONDecoder()
     
     func load() {
-        let urlString = "https://gasculator.herokuapp.com/12/A95"
+        let urlString = "https://gasculator.herokuapp.com/\(DataManager.shared.selectedCar.fuelTypeString ?? "gas95")/\(DataManager.shared.latitude ?? 0.0)/\(DataManager.shared.longitude ?? 0.0)"
         let url = URL(string: urlString)!
         let dataTask = URLSession.shared.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
             if let d = data, d.count > 0 {

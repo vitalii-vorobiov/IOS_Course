@@ -12,10 +12,14 @@ import Foundation
 class DataManager {
     static var shared = DataManager()
     
-    var selectedCar: Car!
-    var tripDuration: Int!
-    var tripDistance: Int!
-    
     var latitude: Double!
     var longitude: Double!
+    var tripDuration: Int!
+    var tripDistance: Int!
+    var originName: String!
+    var destinationName: String!
+    
+    var selectedCar: Car!
+    
+    var selectedFuelPrice: Float!
 }

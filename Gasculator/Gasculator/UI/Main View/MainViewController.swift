@@ -215,10 +215,12 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 if let d = data, d.count > 0 {
                     let route = try? Route.init(from: d)
-                    print("DISTANCE: \(route?.distance)")
-                    print("DURATION: \(route?.duration)")
+//                    print("DISTANCE: \(route?.distance)")
+//                    print("DURATION: \(route?.duration)")
                     DataManager.shared.tripDistance = route?.distance
                     DataManager.shared.tripDuration = route?.duration
+                    DataManager.shared.originName = self.SearchOriginTextField.text ?? "Origin"
+                    DataManager.shared.destinationName = self.SearchDestinationTextField.text ?? "Destination"
                 }
             }
             

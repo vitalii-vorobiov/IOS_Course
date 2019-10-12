@@ -10,21 +10,48 @@ import UIKit
 
 class SummaryViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var tripOriginLabel: UILabel!
+    @IBOutlet weak var tripDestinationLabel: UILabel!
+    @IBOutlet weak var carNameLabel: UILabel!
+    @IBOutlet weak var avgConsumptionLabel: UILabel!
+    @IBOutlet weak var fuelPriceLabel: UILabel!
+    @IBOutlet weak var tripDistanceLabel: UILabel!
+    @IBOutlet weak var tripDurationLabel: UILabel!
+    @IBOutlet weak var avgSpeedLabel: UILabel!
+    @IBOutlet weak var totalPriceLabel: UILabel!
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let distanceKm = Float(DataManager.shared.tripDistance) / 1000.0
+        let durationHours = Float(DataManager.shared.tripDuration) / 3600.0
+        let avgSpeed: Float = distanceKm / durationHours
+        var avgConsumption: Float = 0.0
+        
+        let consumptionCity = DataManager.shared.selectedCar.consumptionCity
+        let consumptionHighway = DataManager.shared.selectedCar.consumptionHighway
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        if (avgSpeed < 30.0) {
+            avgConsumption = consumptionCity
+        } else if (avgSpeed > 80.0) {
+            avgConsumption = consumptionHighway
+        } else {
+            let interpolant = (avgSpeed - 30.0) / 50.0
+            avgConsumption = consumptionHighway + (consumptionCity - consumptionHighway) * interpolant
+        }
+        
+        tripOriginLabel.text = DataManager.shared.originName
+        tripDestinationLabel.text = DataManager.shared.destinationName
+        carNameLabel.text = DataManager.shared.selectedCar.name
+        fuelPriceLabel.text = String(DataManager.shared.selectedFuelPrice)
+        tripDistanceLabel.text = String(distanceKm) + " km"
+        tripDurationLabel.text = String(durationHours) + " h"
+        avgSpeedLabel.text = String(avgSpeed) + " km/h"
+        totalPriceLabel.text = String(avgConsumption * DataManager.shared.selectedFuelPrice)
+        
+        super.viewWillAppear(animated)
     }
-    */
+
+    
 
 }

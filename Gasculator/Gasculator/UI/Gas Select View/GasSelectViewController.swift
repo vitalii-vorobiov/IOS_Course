@@ -13,12 +13,13 @@ class GasSelectViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var gasPriceField: UITextField!
     var gasPrice: Float!
+
+//    @IBAction func okPressed(_ sender: Any) {
+//        if self.gasPrice != nil {
+//            print(self.gasPrice)
+//        }
+//    }
     
-    @IBAction func okPressed(_ sender: Any) {
-        if self.gasPrice != nil {
-            print(self.gasPrice)
-        }
-    }
     @objc func priceFieldChanged(_ textField: UITextField) {
         self.gasPrice = Float(textField.text!) ?? 0.0
     }
