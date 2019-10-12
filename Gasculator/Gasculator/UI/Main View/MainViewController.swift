@@ -62,65 +62,82 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func OnButton(_ sender: Any) {
-        calculateDrivingDistance(origin: ori, destination: des)
+        if (ori != nil && des != nil) {
+            calculateDrivingDistance(origin: ori, destination: des)
+        } else {
+            alert(header: "Some place is missed", message: "You've forgot to add origin or destination point", button: "OK, I'll fix this")
+        }
+    }
+    
+    func alert(header: String, message: String, button: String) {
+        let alert = UIAlertController(title: header, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString(button, comment: "Default action"), style: .default, handler: { _ in
+        NSLog(message)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
         
-        func drawRoute(ori: CLLocation, des: CLLocation) {
-            let urlString = "https://maps.googleapis.com/maps/api/directions/json?origin=\(ori.coordinate.latitude),\(ori.coordinate.longitude)&destination=\(des.coordinate.latitude),\(des.coordinate.longitude)&sensor=false&key=AIzaSyC946KOPL80LIVILtxgwp10CQbo5_S5CL0"
-            
-            guard let url = URL(string: urlString) else {
-                print("Error: URL is broken")
-                return
-            }
-            
-            let urlRequest = URLRequest(url: url)
-            
-            let config = URLSessionConfiguration.default
-            let session = URLSession(configuration: config)
-            
-    //        let task = session.data
-            
-            let task = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
-                do {
-                    guard let data = data else {
-                        throw JSONError.NoData
-                    }
-                    guard let json = try JSONSerialization.jsonObject(with: data, options: []) as?
-                        NSDictionary else {
-                            throw JSONError.ConversionFailed
-                    }
-                                    
-                    let arrayRoutes = json["routes"] as! NSArray
-                    let arrLegs = (arrayRoutes[0] as! NSDictionary).object(forKey: "legs") as! NSArray
-                    let arrSteps = arrLegs[0] as! NSDictionary
-                    
-                    let dicDistance = arrSteps["distance"] as! NSDictionary
-                    let distance = dicDistance["text"] as! String
-                    
-                    DispatchQueue.global(qos: .background).async {
-                        let array = json["routes"] as! NSArray
-                        let dic = array[0] as! NSDictionary
-                        let dic1 = dic["overview_polyline"] as! NSDictionary
-                        let points = dic1["points"] as! String
-
-                        DispatchQueue.main.async {
-                            let path = GMSPath(fromEncodedPath: points)
-                            self.rectangle.map = nil
-                            self.rectangle = GMSPolyline(path: path)
-                            self.rectangle.strokeWidth = 4
-                            self.rectangle.strokeColor = UIColor.blue
-                            self.rectangle.map = self.mapView
-                        }
-                    }
-                } catch let error as JSONError {
-                    print(error.rawValue)
-                } catch let error as NSError {
-                    print(error.debugDescription)
+    func drawRoute(ori: CLLocation, des: CLLocation) {
+        let urlString = "https://maps.googleapis.com/maps/api/directions/json?origin=\(ori.coordinate.latitude),\(ori.coordinate.longitude)&destination=\(des.coordinate.latitude),\(des.coordinate.longitude)&sensor=false&key=AIzaSyC946KOPL80LIVILtxgwp10CQbo5_S5CL0"
+        
+        guard let url = URL(string: urlString) else {
+            print("Error: URL is broken")
+            return
+        }
+        
+        let urlRequest = URLRequest(url: url)
+        
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        
+//        let task = session.data
+        
+        let task = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
+            do {
+                guard let data = data else {
+                    throw JSONError.NoData
+                }
+                guard let json = try JSONSerialization.jsonObject(with: data, options: []) as?
+                    NSDictionary else {
+                        throw JSONError.ConversionFailed
                 }
                 
-            })
-            task.resume()
-        }
+                if json["status"] as! String == "ZERO_RESULTS" {
+                    self.alert(header: "Route Error", message: "Sorry, we can't build route through this places", button: "OK, I'll fix this")
+                    return
+                }
+                                
+                let arrayRoutes = json["routes"] as! NSArray
+                let arrLegs = (arrayRoutes[0] as! NSDictionary).object(forKey: "legs") as! NSArray
+                let arrSteps = arrLegs[0] as! NSDictionary
+                
+                let dicDistance = arrSteps["distance"] as! NSDictionary
+                let distance = dicDistance["text"] as! String
+                
+                DispatchQueue.global(qos: .background).async {
+                    let array = json["routes"] as! NSArray
+                    let dic = array[0] as! NSDictionary
+                    let dic1 = dic["overview_polyline"] as! NSDictionary
+                    let points = dic1["points"] as! String
+
+                    DispatchQueue.main.async {
+                        let path = GMSPath(fromEncodedPath: points)
+                        self.rectangle.map = nil
+                        self.rectangle = GMSPolyline(path: path)
+                        self.rectangle.strokeWidth = 4
+                        self.rectangle.strokeColor = UIColor.blue
+                        self.rectangle.map = self.mapView
+                    }
+                }
+            } catch let error as JSONError {
+                print(error.rawValue)
+            } catch let error as NSError {
+                print(error.debugDescription)
+            }
+            
+        })
+        task.resume()
+    }
         
         //    MARK: Functions for autolocation
         
@@ -140,13 +157,28 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
                 drawMarkers()
             }
             
-            cameraMoveToLocation(toLocation: location?.coordinate)
+            cameraMoveToLocation()
+        }
+    
+        func updateBounds() {
+            bounds = GMSCoordinateBounds()
+            print(111)
+            
+            if originPoint != nil {
+                print(222)
+                bounds = bounds.includingCoordinate(originPoint)
+            }
+            
+            if destinationPoint != nil {
+                print(333)
+                bounds = bounds.includingCoordinate(destinationPoint.coordinate)
+            }
         }
 
-        func cameraMoveToLocation(toLocation: CLLocationCoordinate2D?) {
-            if toLocation != nil {
-                mapView.camera = GMSCameraPosition.camera(withTarget: toLocation!, zoom: 14)
-            }
+        func cameraMoveToLocation() {
+            updateBounds()
+            let update = GMSCameraUpdate.fit(bounds, withPadding: 100.0)
+            mapView.animate(with: update)
         }
         
         func drawMarkers() {
@@ -181,8 +213,10 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 if let d = data, d.count > 0 {
                     let route = try? Route.init(from: d)
-//                    print(route?.distance)
-//                    print(route?.duration)
+                    print("DISTANCE: \(route?.distance)")
+                    print("DURATION: \(route?.duration)")
+                    DataManager.shared.tripDistance = route?.distance
+                    DataManager.shared.tripDuration = route?.duration
                 }
             }
             
@@ -200,7 +234,7 @@ extension MainViewController: GMSAutocompleteViewControllerDelegate {
             SearchOriginTextField.text = place.name
             drawMarkers()
             ori = CLLocation(latitude: originPoint.latitude, longitude: originPoint.longitude)
-            bounds = bounds.includingCoordinate(originPoint)
+            cameraMoveToLocation()
             if (self.originPoint != nil && self.destinationPoint != nil) {
                 drawRoute(ori: ori, des: des)
             }
@@ -213,6 +247,7 @@ extension MainViewController: GMSAutocompleteViewControllerDelegate {
             SearchDestinationTextField.text = place.name
             drawMarkers()
             des = CLLocation(latitude: destinationPoint.coordinate.latitude, longitude: destinationPoint.coordinate.longitude)
+            cameraMoveToLocation()
             if (self.originPoint != nil && self.destinationPoint != nil) {
                 drawRoute(ori: ori, des: des)
             }
