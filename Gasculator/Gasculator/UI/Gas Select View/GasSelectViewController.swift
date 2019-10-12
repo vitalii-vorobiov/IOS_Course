@@ -33,6 +33,7 @@ class GasSelectViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         
         tableView.delegate = self
+        tableView.dataSource  = self
         tableView.dataSource = self
         
         gasPriceField.delegate = self
@@ -80,7 +81,6 @@ class GasSelectViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         let numberOfRows = GasStationStorage.shared.gasStations.count
-        print("SLDSKDLAKDLAKDLAKSLA \(numberOfRows)")
         return numberOfRows
     }
 
@@ -88,7 +88,7 @@ class GasSelectViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "GasStationTableViewCell", for: indexPath) as! GasStationTableViewCell
         let data = GasStationStorage.shared.gasStations[indexPath.row]
         cell.nameField.text = data.name
-        cell.priceField.text = String(data.price) + "$"
+        cell.priceField.text = String(data.price) + "₴"
         return cell
     }
     
@@ -101,6 +101,7 @@ class GasSelectViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(GasStationStorage.shared.gasStations[indexPath.row])
+        DataManager.shared.selectedFuelPrice = GasStationStorage.shared.gasStations[indexPath.row].price
+        performSegue(withIdentifier: "GoToSummary", sender: self)
     }
 }
