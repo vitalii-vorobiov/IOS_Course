@@ -234,6 +234,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                        <connections>
+                                            <action selector="PriceEdititngEnded:" destination="Fgq-du-2UA" eventType="editingDidEnd" id="sOv-KD-c0V"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter price manually" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jea-Ys-efE">
                                         <rect key="frame" x="20" y="18" width="156" height="21"/>
@@ -302,18 +305,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FHM-Kt-Wpy"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Select gas price" id="i54-be-UqM">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="JQL-YL-6iL">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hJh-5j-5NL">
-                                <rect key="frame" x="302" y="7" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="onButton:" destination="Fgq-du-2UA" eventType="touchUpInside" id="3JN-BB-H6z"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Select gas price" id="i54-be-UqM"/>
                     <connections>
                         <outlet property="gasPriceField" destination="OCO-Ex-s2f" id="9I5-Ev-8f9"/>
                         <outlet property="tableView" destination="Z31-cE-3Lp" id="FuS-xo-aRU"/>

@@ -24,10 +24,15 @@ class GasSelectViewController: UIViewController, UITableViewDelegate, UITableVie
         self.gasPrice = Float(textField.text!) ?? 0.0
     }
     
-    @IBAction func onDoneButton(_ sender: Any) {
-//        DataManager.shared.selectedFuelPrice = self.gasPrice
+    @IBAction func PriceEdititngEnded(_ sender: Any) {
+        DataManager.shared.selectedFuelPrice = Float(gasPriceField.text!) ?? 0.0
         performSegue(withIdentifier: "GoToSummary", sender: self)
     }
+    
+    //    @IBAction func onDoneButton(_ sender: Any) {
+//        DataManager.shared.selectedFuelPrice = self.gasPrice
+//        performSegue(withIdentifier: "GoToSummary", sender: self)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,13 +97,13 @@ class GasSelectViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
+//    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 100
+//    }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 100
+//    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         DataManager.shared.selectedFuelPrice = GasStationStorage.shared.gasStations[indexPath.row].price
